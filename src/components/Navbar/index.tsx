@@ -141,27 +141,60 @@ const Navbar = () => {
 				/>
 			</NarrowContainer>
 			<NarrowContainer
-				className={`mobile-nav-menu ${
-					!openMobileNavMenu ? 'hidden' : 'visible'
+				className={`mobile-nav-menu w-full ${
+					!openMobileNavMenu ? 'hide' : 'show'
 				}`}
 			>
-				<NavMenuAccordion
-					label={'Dapps'}
-					open={templateAccordionOpened}
-					onChange={(evt, expanded) => {
-						setTemplateAccordionOpened(expanded);
-					}}
-					menuItems={dappMenuItems}
-				/>
-
-				<NavMenuAccordion
-					label={'Freebies'}
-					open={freebiesAccordionOpened}
-					onChange={(evt, expanded) => {
-						setFreebiesAccordionOpened(expanded);
-					}}
-					menuItems={freebiesMenuItems}
-				/>
+				<div className='mobile-nav-items'>
+					<div className='nav-item'>
+						<InternalLink to={RouteUtilModel.ROUTES.HOME.get()}>
+							Home
+						</InternalLink>
+					</div>
+					<div className='nav-item'>
+						<InternalLink
+							to={RouteUtilModel.ROUTES.MOTION_DESIGN.get()}
+						>
+							Motion Design
+						</InternalLink>
+					</div>
+					<div className='nav-item'>
+						<InternalLink
+							to={RouteUtilModel.ROUTES['3D_MODELING'].get()}
+						>
+							3D Modeling
+						</InternalLink>
+					</div>
+					<div className='nav-item'>
+						<InternalLink
+							to={RouteUtilModel.ROUTES.GRAPHIC_DESIGN.get()}
+						>
+							Graphic Design
+						</InternalLink>
+					</div>
+					<div className='nav-item'>
+						<InternalLink
+							to={RouteUtilModel.ROUTES.VIDEO_EDITING.get()}
+						>
+							Video Editing
+						</InternalLink>
+					</div>
+					<div className='nav-item'>
+						<InternalLink to={RouteUtilModel.ROUTES.UX_UI.get()}>
+							UX/UI
+						</InternalLink>
+					</div>
+					<div className='nav-item'>
+						<InternalLink to={RouteUtilModel.ROUTES.RESUME.get()}>
+							Resume
+						</InternalLink>
+					</div>
+					<div className='nav-item'>
+						<InternalLink to={RouteUtilModel.ROUTES.CONTACT.get()}>
+							Contact
+						</InternalLink>
+					</div>
+				</div>
 			</NarrowContainer>
 		</nav>
 	);

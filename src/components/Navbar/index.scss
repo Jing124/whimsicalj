@@ -1,18 +1,20 @@
 #Navbar {
+	.nav-item {
+		color: rgb(85, 85, 85);
+		cursor: pointer;
+		transition: color 200ms ease-in-out;
+		@apply py-3;
+
+		&:hover {
+			color: #ffbc00;
+		}
+	}
+
 	.nav-items {
 		.nav-item {
-			color: rgb(85, 85, 85);
-			cursor: pointer;
-			transition: color 200ms ease-in-out;
-			@apply py-3;
-
 			&:not(:last-child) {
 				padding-right: 1rem;
 				border-right: 1px solid black;
-			}
-
-			&:hover {
-				color: #ffbc00;
 			}
 		}
 	}
@@ -44,12 +46,19 @@
 			height: 500px;
 			overflow-y: auto;
 		}
-	}
 
-	.logo {
-		img {
-			height: 35px;
-			width: auto;
+		.mobile-nav-items {
+			display: block !important;
+			width: 100%;
+			text-align: center;
+
+			.nav-item {
+				border-bottom: 1px solid rgb(168, 168, 168);
+
+				&:hover {
+					color: #ffbc00;
+				}
+			}
 		}
 	}
 }
