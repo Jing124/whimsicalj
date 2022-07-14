@@ -29,6 +29,9 @@ module.exports = {
 			'md-to-lg': {
 				raw: `(min-width: ${MD}) and (max-width: ${LG})`,
 			},
+			'lg-to-xl': {
+				raw: `(min-width: ${LG}) and (max-width: ${XL})`,
+			},
 		},
 		extend: {
 			gridTemplateColumns: {

@@ -50,7 +50,7 @@ const Navbar = () => {
 
 	return (
 		<nav id='Navbar' className={`py-6 z-10`}>
-			<NarrowContainer className='flex justify-between flex-wrap items-center z-10'>
+			<NarrowContainer className='flex justify-between lg-to-xl:justify-center flex-wrap items-center z-10'>
 				<div className='flex gap-5 items-center z-10'>
 					<div className='logo'>
 						<InternalLink
@@ -142,7 +142,7 @@ const Navbar = () => {
 			</NarrowContainer>
 			<NarrowContainer
 				className={`mobile-nav-menu ${
-					!openMobileNavMenu ? 'hide' : 'show'
+					!openMobileNavMenu ? 'hidden' : 'visible'
 				}`}
 			>
 				<NavMenuAccordion

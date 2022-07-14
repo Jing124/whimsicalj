@@ -1,7 +1,7 @@
 import React from 'react';
 
 const NarrowContainer = ({
-	className,
+	className = '',
 	children,
 	...attributes
 }: {
@@ -10,9 +10,7 @@ const NarrowContainer = ({
 }) => {
 	return (
 		<div
-			className={`widget NarrowContainer container xs-max:px-5 xs-to-sm:px-5 sm-to-md:px-8 md-to-lg:px-8 lg:px-12 lg:mx-auto lg-max:max-w-full ${
-				className || ''
-			}`}
+			className={`widget NarrowContainer flex justify-between px-10 ${className}`}
 			{...attributes}
 		>
 			{children}
