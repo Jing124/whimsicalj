@@ -1,15 +1,17 @@
 #Navbar {
-	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 	.nav-items {
 		.nav-item {
-			font-weight: bold;
-			font-size: 15px;
-			color: #222;
+			color: rgb(85, 85, 85);
 			cursor: pointer;
-			padding: 1.5rem;
+			transition: color 200ms ease-in-out;
+
+			&:not(:last-child) {
+				padding-right: 1rem;
+				border-right: 1px solid black;
+			}
 
 			&:hover {
-				opacity: var(--text-opacity-hover);
+				color: #ffbc00;
 			}
 		}
 	}
@@ -47,24 +49,6 @@
 		img {
 			height: 35px;
 			width: auto;
-		}
-	}
-}
-
-#Navbar.dark {
-	background-color: var(--bg-color-d);
-	border-bottom: 1px solid var(--divider-color-3-d);
-	box-shadow: none;
-
-	.nav-items {
-		.nav-item {
-			color: var(--text-color-primary-d);
-		}
-	}
-
-	.menu-icon {
-		svg {
-			color: var(--icon-filled-color-d);
 		}
 	}
 }

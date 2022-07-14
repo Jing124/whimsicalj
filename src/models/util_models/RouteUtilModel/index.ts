@@ -1,128 +1,43 @@
 class RouteUtilModel {
-	static ACCOUNT_TYPES = {
-		BUYER: 'buyer',
-		SELLER: 'seller',
-	};
-
-	static BUYER_SECTIONS = {
-		DASHBOARD: 'dashboard',
-		ORDERS: 'orders',
-		APPS: 'apps',
-	};
-
 	static ROUTES = {
-		ACCOUNT: {
-			BUYER: {
-				DASHBOARD: {
-					get: () => {
-						return `/account/${RouteUtilModel.ACCOUNT_TYPES.BUYER}/${RouteUtilModel.BUYER_SECTIONS.DASHBOARD}`;
-					},
-				},
-				ORDERS: {
-					get: () => {
-						return `/account/${RouteUtilModel.ACCOUNT_TYPES.BUYER}/${RouteUtilModel.BUYER_SECTIONS.ORDERS}`;
-					},
-				},
-				APPS: {
-					get: () => {
-						return `/account/${RouteUtilModel.ACCOUNT_TYPES.BUYER}/${RouteUtilModel.BUYER_SECTIONS.APPS}`;
-					},
-				},
-				get: () => {
-					return `/account/${RouteUtilModel.ACCOUNT_TYPES.BUYER}`;
-				},
-			},
-			SELLER: {
-				get: () => {
-					return `/account/${RouteUtilModel.ACCOUNT_TYPES.SELLER}`;
-				},
-			},
+		HOME: {
 			get: () => {
-				return '/account';
+				return '/';
 			},
 		},
-		CART: {
+		MOTION_DESIGN: {
 			get: () => {
-				return '/cart';
+				return '/motion-design';
 			},
 		},
-		BLOG: {
+		['3D_MODELING']: {
 			get: () => {
-				return '/blog';
+				return '/3d_modeling';
 			},
 		},
-		OFFERS: {
+		GRAPHIC_DESIGN: {
 			get: () => {
-				return '/offers';
+				return '/graphic-design';
 			},
 		},
-		LOGIN: {
+		VIDEO_EDITING: {
 			get: () => {
-				return '/login';
+				return '/video-editing';
 			},
 		},
-		SIGNUP: {
+		UX_UI: {
 			get: () => {
-				return '/signup';
+				return '/ux_ui';
 			},
 		},
-		FORGOT_PASSWORD: {
+		RESUME: {
 			get: () => {
-				return '/forgot-password';
+				return '/resume';
 			},
 		},
-		RECEIPT: {
+		CONTACT: {
 			get: () => {
-				return '/receipt';
-			},
-		},
-		INVOICE: {
-			get: () => {
-				return '/invoice';
-			},
-		},
-		// TODO: Remove the rest
-		MARKETPLACE: {
-			get: () => {
-				return '/marketplace';
-			},
-			PROFILE: {
-				get: () => {
-					return '/marketplace/profile';
-				},
-				FAVORITES: {
-					get: () => {
-						return '/marketplace/profile/favorites';
-					},
-					PETS: {
-						get: () => {
-							return '/marketplace/profile/favorites/pets';
-						},
-					},
-					GHOSTS: {
-						/**
-						 * @returns /marketplace/profile/favorites/ghosts
-						 */
-						get: () => {
-							return '/marketplace/profile/favorites/ghosts';
-						},
-					},
-				},
-				INVENTORY: {
-					get: () => {
-						'/marketplace/profile/inventory';
-					},
-					PETS: {
-						get: () => {
-							return '/marketplace/profile/inventory/pets';
-						},
-					},
-					GHOSTS: {
-						get: () => {
-							return '/marketplace/profile/inventory/ghosts';
-						},
-					},
-				},
+				return '/contact';
 			},
 		},
 	};

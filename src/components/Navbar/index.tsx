@@ -7,8 +7,10 @@ import Container from '../widgets/Container';
 import IconButton from '../widgets/Button/IconButton/IconButton';
 import InternalLink from '../widgets/Link/InternalLink';
 import MenuIcon from '@mui/icons-material/Menu';
+import NarrowContainer from '../widgets/Container/NarrowContainer';
 import NavMenuAccordion from './NavMenu/NavMenuAccordion';
 import NavMenuItemList from './NavMenu/NavMenuList';
+import RouteUtilModel from '../../models/util_models/RouteUtilModel';
 import dappMenuItems from './NavMenu/constants/dappMenuItems';
 import freebiesMenuItems from './NavMenu/constants/freebiesMenuItems';
 import useMobileLayout from '../../models/util_models/ScreenUtilModel/hooks/useMobileLayout';
@@ -47,27 +49,25 @@ const Navbar = () => {
 	}, [isMobileLayout]);
 
 	return (
-		<nav id='Navbar' className={`py-2 z-10`}>
-			<Container className='flex justify-between flex-wrap items-center z-10'>
+		<nav id='Navbar' className={`py-6 z-10`}>
+			<NarrowContainer className='flex justify-between flex-wrap items-center z-10'>
 				<div className='flex gap-5 items-center z-10'>
 					<div className='logo'>
-						<InternalLink to='/'>
+						<InternalLink
+							to='/'
+							className='flex gap-5 items-center'
+						>
 							<img
+								style={{ width: '60px', height: '47px' }}
 								src={AssetUtilModel.LOGO_PATH({
 									size: isMobileLayout ? 'mobile' : 'desktop',
 								})}
 								alt='logo'
 							/>
+							<span className='text-xl font-extrabold'>
+								Jing Wang
+							</span>
 						</InternalLink>
-					</div>
-					<div className='nav-items flex items-center lg-max:hidden'>
-						<div
-							className='nav-item'
-							onMouseEnter={handleClick}
-							onMouseOut={handleClose}
-						>
-							Dapps
-						</div>
 					</div>
 				</div>
 
@@ -82,14 +82,65 @@ const Navbar = () => {
 					</IconButton>
 				</div>
 
+				<div className='hidden lg:flex items-center gap-5 lg:visible nav-items'>
+					<div className='nav-item'>
+						<InternalLink to={RouteUtilModel.ROUTES.HOME.get()}>
+							Home
+						</InternalLink>
+					</div>
+					<div className='nav-item'>
+						<InternalLink
+							to={RouteUtilModel.ROUTES.MOTION_DESIGN.get()}
+						>
+							Motion Design
+						</InternalLink>
+					</div>
+					<div className='nav-item'>
+						<InternalLink
+							to={RouteUtilModel.ROUTES['3D_MODELING'].get()}
+						>
+							3D Modeling
+						</InternalLink>
+					</div>
+					<div className='nav-item'>
+						<InternalLink
+							to={RouteUtilModel.ROUTES.GRAPHIC_DESIGN.get()}
+						>
+							Graphic Design
+						</InternalLink>
+					</div>
+					<div className='nav-item'>
+						<InternalLink
+							to={RouteUtilModel.ROUTES.VIDEO_EDITING.get()}
+						>
+							Video Editing
+						</InternalLink>
+					</div>
+					<div className='nav-item'>
+						<InternalLink to={RouteUtilModel.ROUTES.UX_UI.get()}>
+							UX/UI
+						</InternalLink>
+					</div>
+					<div className='nav-item'>
+						<InternalLink to={RouteUtilModel.ROUTES.RESUME.get()}>
+							Resume
+						</InternalLink>
+					</div>
+					<div className='nav-item'>
+						<InternalLink to={RouteUtilModel.ROUTES.CONTACT.get()}>
+							Contact
+						</InternalLink>
+					</div>
+				</div>
+
 				<NavMenuItemList
 					anchorEl={anchorEl}
 					open={open}
 					handleOpen={handleOpen}
 					handleClose={handleClose}
 				/>
-			</Container>
-			<Container
+			</NarrowContainer>
+			<NarrowContainer
 				className={`mobile-nav-menu ${
 					!openMobileNavMenu ? 'hide' : 'show'
 				}`}
@@ -111,7 +162,7 @@ const Navbar = () => {
 					}}
 					menuItems={freebiesMenuItems}
 				/>
-			</Container>
+			</NarrowContainer>
 		</nav>
 	);
 };
