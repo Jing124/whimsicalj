@@ -1,0 +1,70 @@
+#Navbar {
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+	.nav-items {
+		.nav-item {
+			font-weight: bold;
+			font-size: 15px;
+			color: #222;
+			cursor: pointer;
+			padding: 1.5rem;
+
+			&:hover {
+				opacity: var(--text-opacity-hover);
+			}
+		}
+	}
+
+	.menu-icon {
+		svg {
+			height: 1.25em;
+			width: 1.25em;
+			color: #222;
+		}
+	}
+
+	.mobile-nav-menu {
+		transition: height ease-in-out 0.5s;
+		overflow-y: hidden;
+
+		// Hide scrollbar
+		&::-webkit-scrollbar {
+			display: none;
+		}
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
+
+		&.hide {
+			height: 0px;
+		}
+
+		&.show {
+			height: 500px;
+			overflow-y: auto;
+		}
+	}
+
+	.logo {
+		img {
+			height: 35px;
+			width: auto;
+		}
+	}
+}
+
+#Navbar.dark {
+	background-color: var(--bg-color-d);
+	border-bottom: 1px solid var(--divider-color-3-d);
+	box-shadow: none;
+
+	.nav-items {
+		.nav-item {
+			color: var(--text-color-primary-d);
+		}
+	}
+
+	.menu-icon {
+		svg {
+			color: var(--icon-filled-color-d);
+		}
+	}
+}

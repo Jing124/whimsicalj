@@ -1,0 +1,61 @@
+.widget.FilledButton {
+	/* Display */
+	display: inline-block;
+
+	// Typography
+	font-size: 15px;
+	font-weight: bold;
+	color: #ffffff;
+	text-align: center;
+
+	// Border
+	border-radius: 8px;
+
+	// Spacing
+	padding: 14px 20px;
+
+	// Animations
+	transition: background-color 0.1s ease-in-out, opacity 0.1s ease-in-out;
+
+	&.primary {
+		background-color: var(--btn-background-color-primary-filled-l);
+
+		&:hover {
+			background: var(--btn-background-color-primary-filled-hover-l);
+		}
+	}
+
+	&.secondary {
+		background-color: var(--btn-background-color-secondary-filled-l);
+
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+
+	svg {
+		font-size: 20px;
+	}
+}
+
+.widget.FilledButton.dark {
+	&.primary {
+		background-color: var(--btn-background-color-primary-filled-d);
+
+		&:hover {
+			background-color: var(
+				--btn-background-color-primary-filled-hover-d
+			);
+		}
+	}
+
+	&.secondary {
+		background-color: var(--btn-background-color-secondary-filled-d);
+	}
+}
+
+.widget.FilledButton.small {
+	border-radius: 5px;
+	font-size: 12px;
+	padding: 4px 15px;
+}

@@ -1,0 +1,49 @@
+.widget.OutlinedButton {
+	/* Display */
+	display: inline-block;
+
+	// Typography
+	font-size: 15px;
+	font-weight: bold;
+	color: black;
+	text-align: center;
+
+	// Border
+	border-radius: 8px;
+
+	// Spacing
+	padding: 14px 20px;
+
+	// Animations
+	transition: background-color 0.1s ease-in-out, opacity 0.1s ease-in-out,
+		border-color 0.1s ease-in-out;
+
+	border: 1px solid var(--btn-border-color-primary-outlined-l);
+
+	background-color: transparent;
+
+	svg {
+		font-size: 20px;
+	}
+
+	&:hover {
+		opacity: 0.6;
+	}
+}
+
+.widget.OutlinedButton.dark {
+	color: var(--text-color-primary-d);
+	border-color: var(--btn-border-color-primary-outlined-d);
+}
+
+.widget.OutlinedButton.small {
+	border-radius: 5px;
+	font-size: 12px;
+	padding: 4px 15px;
+}
+
+.widget.OutlinedButton.medium {
+	border-radius: 5px;
+	font-size: 14px;
+	padding: 6px 16px;
+}

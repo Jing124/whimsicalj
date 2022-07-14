@@ -1,0 +1,38 @@
+.gadget.OverlayImage {
+	position: relative;
+	border-radius: 10px;
+	border: 1px solid var(--divider-color-3-l);
+
+	.overlay {
+		border-radius: 10px;
+	}
+
+	img {
+		border-radius: 10px;
+	}
+
+	.widget.FilledButton {
+		display: none;
+	}
+}
+
+.gadget.OverlayImage:hover {
+	.overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba($color: #000000, $alpha: 0.3);
+		z-index: 1;
+	}
+
+	.widget.FilledButton {
+		display: inline-block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		z-index: 2;
+	}
+}

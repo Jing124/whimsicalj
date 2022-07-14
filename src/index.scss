@@ -12,6 +12,12 @@
 	line-height: normal;
 }
 
+:root {
+	/* Font Family */
+	--font-family: 'Manrope', 'sans-serif', 'Noto Serif SC', 'Noto Serif TC',
+		'serif';
+}
+
 body {
 	* {
 		font-family: var(--font-family);

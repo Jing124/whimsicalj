@@ -1,0 +1,32 @@
+.widget.Input {
+	// Border
+	border: 1px solid var(--border-color-divider);
+
+	// Background
+	background-color: var(--main-background-dark);
+
+	// Typography
+	font-family: var(--font-family);
+	color: var(--text-color-primary-l);
+
+	&:focus,
+	&:focus-visible {
+		border: 2px solid #101010;
+		outline: #101010;
+	}
+
+	&:disabled {
+		opacity: 0.7;
+	}
+}
+
+.widget.Input.dark {
+	background-color: var(--input-bg-color-d);
+	border-color: var(--input-border-color-d);
+	color: var(--text-color-primary-d);
+
+	&:focus,
+	&:focus-visible {
+		outline: 1px solid #8d8d8d;
+	}
+}

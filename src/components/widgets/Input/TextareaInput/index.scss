@@ -1,0 +1,12 @@
+.widget.TextareaInput {
+	border: 1px solid var(--input-border-color-l);
+}
+
+.widget.TextareaInput.dark {
+	background-color: var(--input-bg-color-d);
+	border-color: var(--input-border-color-d);
+
+	&:focus-visible {
+		outline: 1px solid #8d8d8d;
+	}
+}

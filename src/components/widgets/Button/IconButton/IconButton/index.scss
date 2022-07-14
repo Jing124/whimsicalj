@@ -1,0 +1,12 @@
+.widget.IconButton {
+	color: #d1d1d1 !important;
+
+	&:hover {
+		color: white !important;
+		background: rgba(175, 175, 175, 0.5) !important;
+	}
+}
+
+.widget.IconButton.no-padding {
+	padding: 0px;
+}
