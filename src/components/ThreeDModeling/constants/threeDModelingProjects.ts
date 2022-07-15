@@ -13,7 +13,9 @@ const motionDesignProjects = [
 		title: 'The Year Of Tiger',
 		description:
 			'The design of this project is inspired by the Chinese New Year. Each Chinese New Year represents a different zodiac, so 2022 represents the Year of Tiger. This tiger design wears a traditional lion dance hat and holds a congratulatory Chinese New Year sentence that represents the arrival of the Year of the Tiger.',
-		linkTo: '/',
+		linkTo: `${RouteUtilModel.ROUTES['3D_MODELING'].get()}/${
+			RouteUtilModel.THREE_D_MODELING_PROJECTS.YEAR_OF_TIGER
+		}`,
 	},
 	{
 		title: 'The Oreo Factory',

@@ -3,8 +3,11 @@ import './index.scss';
 import CollageGrid from '../../../widgets/Layout/CollageGrid';
 import CollageGridColumn from '../../../widgets/Layout/CollageGrid/CollageGridColumn';
 import Content from '../../../Content';
+import usePageTitle from '../../../../hooks/usePageTitle';
 
 const LittleSkeleton = () => {
+	usePageTitle('Little Skeleton | WhimscalJ');
+
 	return (
 		<Content id='LittleSkeleton' title='Little Skeleton' titleBorderBottom>
 			<CollageGrid className='my-10'>

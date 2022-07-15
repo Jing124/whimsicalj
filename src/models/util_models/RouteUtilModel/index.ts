@@ -1,6 +1,7 @@
 class RouteUtilModel {
 	static THREE_D_MODELING_PROJECTS = {
 		LITTLE_SKELETON: 'little-skeleton',
+		YEAR_OF_TIGER: 'year-of-tiger',
 	};
 
 	static ROUTES = {
