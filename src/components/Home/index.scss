@@ -2,4 +2,23 @@
 	.hello {
 		color: var(--text-secondary);
 	}
+
+	.text-block {
+		animation: article-load 300ms ease-in 1s;
+		animation-fill-mode: forwards;
+		transform: translateY(-20px);
+		opacity: 0;
+	}
+
+	@keyframes article-load {
+		0% {
+			transform: translateY(-20px);
+			opacity: 0;
+		}
+
+		100% {
+			transform: translateY(0px);
+			opacity: 1;
+		}
+	}
 }

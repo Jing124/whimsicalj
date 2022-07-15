@@ -21,7 +21,7 @@ const Content = ({
 					{title ?? ''}
 				</div>
 			)}
-			<div className={`${title ? 'md:pt-10' : 'pt-5 md:pt-40'}`}>
+			<div className={`${title ? 'md:py-10' : 'py-5 md:py-40'}`}>
 				{children}
 			</div>
 		</Container>

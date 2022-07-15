@@ -19,7 +19,7 @@ const Home = () => {
 					</video>
 				</div>
 				<div className='flex justify-center md:order-1'>
-					<div>
+					<div className='text-block'>
 						<div className='text-5xl md:text-8xl font-extrabold hello'>
 							Hello
 						</div>
