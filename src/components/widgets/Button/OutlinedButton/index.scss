@@ -11,8 +11,7 @@
 	padding: 8px 40px;
 
 	// Animations
-	transition: background-color 0.1s ease-in-out, opacity 0.1s ease-in-out,
-		border-color 0.1s ease-in-out;
+	transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
 
 	border: 1px solid #ffbc00;
 
@@ -23,7 +22,8 @@
 	}
 
 	&:hover {
-		opacity: 0.6;
+		background-color: #ffbc00;
+		color: white;
 	}
 }
 

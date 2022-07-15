@@ -21,7 +21,9 @@ const motionDesignProjects = [
 		title: 'The Oreo Factory',
 		description:
 			"Oreo's brand is popular with many people and children who prefer sweets, so I biased the overall design of this animation towards cuteness. The choice of color is biased towards pink, lavender, etc. The result is a small, cute Oreo factory assembly line for this project.",
-		linkTo: '/',
+		linkTo: `${RouteUtilModel.ROUTES['3D_MODELING'].get()}/${
+			RouteUtilModel.THREE_D_MODELING_PROJECTS.OREO_FACTORY
+		}`,
 	},
 	{
 		title: 'Astronaut-Bunny',
