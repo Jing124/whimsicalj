@@ -2,12 +2,25 @@ import RouteUtilModel from '../../../models/util_models/RouteUtilModel';
 
 const motionDesignProjects = [
 	{
+		title: 'Collision Across The Ages',
+		description:
+			'An ancient Chinese clay figurine artist uses advanced technology to create 3D models..',
+		images: [
+			`${process.env.PUBLIC_URL}/projects/3d_modeling/collision_across_the_ages/01.webp`,
+			`${process.env.PUBLIC_URL}/projects/3d_modeling/collision_across_the_ages/02.webp`,
+			`${process.env.PUBLIC_URL}/projects/3d_modeling/collision_across_the_ages/03.webp`,
+			`${process.env.PUBLIC_URL}/projects/3d_modeling/collision_across_the_ages/04.webp`,
+		],
+	},
+	{
 		title: 'Little Skeleton',
 		description:
 			'This is my internship project. The purpose is to create a cute little skeleton. I created this model regarding normal scale skeletons and some cute skeletons.',
 		linkTo: `${RouteUtilModel.ROUTES['3D_MODELING'].get()}/${
 			RouteUtilModel.THREE_D_MODELING_PROJECTS.LITTLE_SKELETON
 		}`,
+		src: `${process.env.PUBLIC_URL}/projects/3d_modeling/littleskeleton/skeleton.mp4`,
+		poster: `${process.env.PUBLIC_URL}/projects/3d_modeling/littleskeleton/poster.png`,
 	},
 	{
 		title: 'The Year Of Tiger',
@@ -16,6 +29,8 @@ const motionDesignProjects = [
 		linkTo: `${RouteUtilModel.ROUTES['3D_MODELING'].get()}/${
 			RouteUtilModel.THREE_D_MODELING_PROJECTS.YEAR_OF_TIGER
 		}`,
+		src: `${process.env.PUBLIC_URL}/projects/3d_modeling/year_of_tiger/tiger.mp4`,
+		poster: `${process.env.PUBLIC_URL}/projects/3d_modeling/year_of_tiger/poster.png`,
 	},
 	{
 		title: 'The Oreo Factory',
@@ -24,6 +39,8 @@ const motionDesignProjects = [
 		linkTo: `${RouteUtilModel.ROUTES['3D_MODELING'].get()}/${
 			RouteUtilModel.THREE_D_MODELING_PROJECTS.OREO_FACTORY
 		}`,
+		src: `${process.env.PUBLIC_URL}/projects/3d_modeling/oreo_factory/oero.mp4`,
+		poster: `${process.env.PUBLIC_URL}/projects/3d_modeling/oreo_factory/poster.png`,
 	},
 	{
 		title: 'Astronaut-Bunny',
@@ -32,6 +49,8 @@ const motionDesignProjects = [
 		linkTo: `${RouteUtilModel.ROUTES['3D_MODELING'].get()}/${
 			RouteUtilModel.THREE_D_MODELING_PROJECTS.ASTRONAUT_BUNNY
 		}`,
+		src: `${process.env.PUBLIC_URL}/projects/3d_modeling/astronaut_bunny/bunny.mp4`,
+		poster: `${process.env.PUBLIC_URL}/projects/3d_modeling/astronaut_bunny/poster.png`,
 	},
 	{
 		title: 'Netflix',
@@ -40,6 +59,8 @@ const motionDesignProjects = [
 		linkTo: `${RouteUtilModel.ROUTES['3D_MODELING'].get()}/${
 			RouteUtilModel.THREE_D_MODELING_PROJECTS.NETFLIX
 		}`,
+		src: `${process.env.PUBLIC_URL}/projects/3d_modeling/netflix/netflix.mp4`,
+		poster: `${process.env.PUBLIC_URL}/projects/3d_modeling/netflix/poster.png`,
 	},
 ];
 
