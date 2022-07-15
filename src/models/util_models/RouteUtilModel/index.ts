@@ -12,7 +12,7 @@ class RouteUtilModel {
 		},
 		['3D_MODELING']: {
 			get: () => {
-				return '/3d_modeling';
+				return '/3d-modeling';
 			},
 		},
 		GRAPHIC_DESIGN: {
