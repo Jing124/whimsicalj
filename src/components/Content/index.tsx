@@ -8,16 +8,22 @@ const Content = ({
 	className = '',
 	title,
 	children,
+	titleBorderBottom = false,
 	...attributes
 }: {
 	className?: string;
 	title?: string;
+	titleBorderBottom?: boolean;
 	children: ReactNode;
 }) => {
 	return (
 		<Container className={`Content ${className}`} {...attributes}>
 			{title && (
-				<div className={`title py-24 text-5xl font-extrabold`}>
+				<div
+					className={`title pt-16 pb-12 text-5xl font-extrabold ${
+						titleBorderBottom ? 'show-border-bottom' : ''
+					}`}
+				>
 					{title ?? ''}
 				</div>
 			)}

@@ -1,4 +1,8 @@
 class RouteUtilModel {
+	static THREE_D_MODELING_PROJECTS = {
+		LITTLE_SKELETON: 'little-skeleton',
+	};
+
 	static ROUTES = {
 		HOME: {
 			get: () => {

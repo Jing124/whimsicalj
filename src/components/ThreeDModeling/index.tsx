@@ -25,7 +25,7 @@ const ThreeDModeling = () => {
 									Icon={KeyboardArrowRightIcon}
 									iconPosition='right'
 									btnType='link'
-									to='/'
+									to={project.linkTo}
 								>
 									Detail
 								</OutlinedButton>

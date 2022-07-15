@@ -1,5 +1,9 @@
 .Content {
 	.title {
 		color: #555555;
+
+		&.show-border-bottom {
+			border-bottom: 1px solid var(--divider);
+		}
 	}
 }
