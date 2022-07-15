@@ -4,7 +4,7 @@ import Content from '../../../Content';
 import usePageTitle from '../../../../hooks/usePageTitle';
 
 const AstronautBunny = () => {
-	usePageTitle('Astronaut Bunny | WhimscalJ');
+	usePageTitle('Astronaut Bunny | WhimsicalJ');
 	return (
 		<Content id='AstronautBunny' title='Bunny' titleBorderBottom>
 			<div className='my-10 grid md:grid-cols-2 gap-5'>

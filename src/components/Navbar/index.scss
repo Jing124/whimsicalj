@@ -5,6 +5,7 @@
 		transition: color 200ms ease-in-out;
 		@apply py-3;
 
+		&.active,
 		&:hover {
 			color: #ffbc00;
 		}

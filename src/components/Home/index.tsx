@@ -9,7 +9,9 @@ const Home = () => {
 				<div className='flex justify-center order-1'>
 					<video
 						controls
-						poster={`${process.env.PUBLIC_URL}/videos/intro/poster.png`}
+						poster={`${process.env.PUBLIC_URL}/videos/intro/poster.jpg`}
+						autoPlay
+						muted
 					>
 						<source
 							src={`${process.env.PUBLIC_URL}/videos/intro/intro.mp4`}

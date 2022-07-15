@@ -6,7 +6,7 @@ import Content from '../../../Content';
 import usePageTitle from '../../../../hooks/usePageTitle';
 
 const LittleSkeleton = () => {
-	usePageTitle('Little Skeleton | WhimscalJ');
+	usePageTitle('Little Skeleton | WhimsicalJ');
 
 	return (
 		<Content id='LittleSkeleton' title='Little Skeleton' titleBorderBottom>

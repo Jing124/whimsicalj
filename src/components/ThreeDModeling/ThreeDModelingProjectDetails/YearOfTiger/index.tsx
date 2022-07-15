@@ -6,7 +6,7 @@ import Content from '../../../Content';
 import usePageTitle from '../../../../hooks/usePageTitle';
 
 const YearOfTiger = () => {
-	usePageTitle('The Year of Tiger | WhimscalJ');
+	usePageTitle('The Year of Tiger | WhimsicalJ');
 	return (
 		<Content id='YearOfTiger' title='The Year of Tiger' titleBorderBottom>
 			<CollageGrid className='my-10'>

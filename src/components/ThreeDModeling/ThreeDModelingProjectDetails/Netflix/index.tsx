@@ -4,7 +4,7 @@ import Content from '../../../Content';
 import usePageTitle from '../../../../hooks/usePageTitle';
 
 const Netflix = () => {
-	usePageTitle('Netflix | WhimscalJ');
+	usePageTitle('Netflix | WhimsicalJ');
 	return (
 		<Content id='Netflix' title='Bunny' titleBorderBottom>
 			<div className='my-10 grid md:grid-cols-2 gap-5'>

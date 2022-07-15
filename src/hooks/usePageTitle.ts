@@ -5,7 +5,7 @@ const usePageTitle = (title: string) => {
 		document.title = title;
 
 		return () => {
-			document.title = 'WhimscalJ';
+			document.title = 'WhimsicalJ';
 		};
 	}, [title]);
 };

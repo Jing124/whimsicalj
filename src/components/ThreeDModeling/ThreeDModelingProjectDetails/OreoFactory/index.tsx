@@ -4,7 +4,7 @@ import Content from '../../../Content';
 import usePageTitle from '../../../../hooks/usePageTitle';
 
 const OreoFactory = () => {
-	usePageTitle('The Oreo Factory | WhimscalJ');
+	usePageTitle('The Oreo Factory | WhimsicalJ');
 	return (
 		<Content id='OreoFactory' title='The Oreo Factory' titleBorderBottom>
 			<div className='my-10 grid md:grid-cols-2 gap-5'>
