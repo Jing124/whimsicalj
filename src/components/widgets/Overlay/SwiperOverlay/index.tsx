@@ -9,7 +9,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 const SwiperOverlay = () => {
 	return (
-		<div className='absolute top-0 left-0 w-full h-full bg-black bg-opacity-80 z-30 '>
+		<div className='widget SwiperOverlay absolute top-0 left-0 w-full h-full bg-black bg-opacity-80 z-30 '>
 			<Swiper
 				// install Swiper modules
 				modules={[Navigation, Pagination, Scrollbar, A11y]}
