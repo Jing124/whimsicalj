@@ -8,4 +8,9 @@
 			@apply font-bold;
 		}
 	}
+
+	/*This is to fix the weird overflow issue*/
+	.swiper-slide {
+		width: 100% !important;
+	}
 }

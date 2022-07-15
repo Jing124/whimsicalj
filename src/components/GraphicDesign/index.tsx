@@ -13,13 +13,8 @@ import ProjectRow from '../gadgets/ProjectRow';
 import ProjectRowDescription from '../gadgets/ProjectRow/ProjectRowDescription';
 import ProjectRowItem from '../gadgets/ProjectRow/ProjectRowItem';
 import ProjectRowTitle from '../gadgets/ProjectRow/ProjectRowTitle';
-import SidebarOverlay from '../widgets/Overlay/SidebarOverlay';
 import SwiperOverlay from '../widgets/Overlay/SwiperOverlay';
 import graphicDesignProjects from './constants/graphicDesignProjects';
-
-// import Swiper core and required modules
-
-// Import Swiper styles
 
 const GraphicDesign = () => {
 	const [overlayOpen, setOpenLayOpen] = useState(false);
