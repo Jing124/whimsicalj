@@ -6,6 +6,7 @@ import 'swiper/css/scrollbar';
 
 import { A11y, Navigation, Pagination, Scrollbar } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { useCallback, useState } from 'react';
 
 import Content from '../Content';
 import ProjectRow from '../gadgets/ProjectRow';
@@ -21,6 +22,16 @@ import graphicDesignProjects from './constants/graphicDesignProjects';
 // Import Swiper styles
 
 const GraphicDesign = () => {
+	const [overlayOpen, setOpenLayOpen] = useState(false);
+
+	const handleSwiperOnClick = useCallback(() => {
+		setOpenLayOpen(true);
+	}, []);
+
+	const handleSwiperOnClose = useCallback(() => {
+		setOpenLayOpen(false);
+	}, []);
+
 	return (
 		<>
 			<Content id='GraphicDesign' title='Graphic Design'>
@@ -54,13 +65,13 @@ const GraphicDesign = () => {
 										console.log('slide change')
 									}
 								>
-									<SwiperSlide>
+									<SwiperSlide onClick={handleSwiperOnClick}>
 										<img
 											src={`${process.env.PUBLIC_URL}/projects/graphic_design/converse/converse_01.webp`}
 											alt='converse'
 										/>
 									</SwiperSlide>
-									<SwiperSlide>
+									<SwiperSlide onClick={handleSwiperOnClick}>
 										<img
 											src={`${process.env.PUBLIC_URL}/projects/graphic_design/converse/converse_02.webp`}
 											alt='converse'
@@ -72,7 +83,7 @@ const GraphicDesign = () => {
 					);
 				})}
 			</Content>
-			<SwiperOverlay />
+			<SwiperOverlay open={overlayOpen} onClose={handleSwiperOnClose} />
 		</>
 	);
 };

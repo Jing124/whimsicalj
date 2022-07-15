@@ -6,10 +6,40 @@ import 'swiper/css/scrollbar';
 
 import { A11y, Navigation, Pagination, Scrollbar } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import {
+	useLockBodyScroll,
+	useUnlockBodyScroll,
+} from '../../../../states/lockBodyScroll/hooks';
 
-const SwiperOverlay = () => {
-	return (
-		<div className='widget SwiperOverlay absolute top-0 left-0 w-full h-full bg-black bg-opacity-80 z-30 '>
+import ClearIcon from '@mui/icons-material/Clear';
+import IconButton from '../../Button/IconButton/IconButton';
+import { useEffect } from 'react';
+
+const SwiperOverlay = ({
+	open,
+	onClose,
+}: {
+	open: boolean;
+	onClose?: () => void;
+}) => {
+	const lockBodyScroll = useLockBodyScroll();
+	const unlockBodyScroll = useUnlockBodyScroll();
+
+	useEffect(() => {
+		if (open) {
+			lockBodyScroll();
+		} else {
+			unlockBodyScroll();
+		}
+	}, [open]);
+
+	return open ? (
+		<div className='widget SwiperOverlay fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 z-30 '>
+			<div className='absolute top-1 right-1 z-40'>
+				<IconButton onClick={onClose}>
+					<ClearIcon />
+				</IconButton>
+			</div>
 			<Swiper
 				// install Swiper modules
 				modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -38,6 +68,8 @@ const SwiperOverlay = () => {
 				</SwiperSlide>
 			</Swiper>
 		</div>
+	) : (
+		<></>
 	);
 };
 

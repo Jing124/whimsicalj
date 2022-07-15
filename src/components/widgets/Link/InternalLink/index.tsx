@@ -1,12 +1,22 @@
 import './index.scss';
 
 import { Link } from 'react-router-dom';
+import { ReactNode } from 'react';
 
-const InternalLink = (props) => {
-	const { className, children, ...attributes } = props;
+const InternalLink = ({
+	to,
+	className = '',
+	children,
+	...attributes
+}: {
+	to: string;
+	className?: string;
+	children: ReactNode;
+}) => {
 	return (
 		<Link
-			className={`widget InternalLink ${className || ''}`}
+			to={to}
+			className={`widget InternalLink ${className}`}
 			{...attributes}
 		>
 			{children}

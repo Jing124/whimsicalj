@@ -1,7 +1,11 @@
 import { Action, ThunkAction, configureStore } from '@reduxjs/toolkit';
 
+import lockBodyScrollSlice from '../states/lockBodyScroll/lockBodyScrollSlice';
+
 export const store = configureStore({
-	reducer: {},
+	reducer: {
+		lockBodyScroll: lockBodyScrollSlice,
+	},
 });
 
 export type AppDispatch = typeof store.dispatch;
