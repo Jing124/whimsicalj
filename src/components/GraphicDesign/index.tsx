@@ -12,6 +12,8 @@ import ProjectRow from '../gadgets/ProjectRow';
 import ProjectRowDescription from '../gadgets/ProjectRow/ProjectRowDescription';
 import ProjectRowItem from '../gadgets/ProjectRow/ProjectRowItem';
 import ProjectRowTitle from '../gadgets/ProjectRow/ProjectRowTitle';
+import SidebarOverlay from '../widgets/Overlay/SidebarOverlay';
+import SwiperOverlay from '../widgets/Overlay/SwiperOverlay';
 import graphicDesignProjects from './constants/graphicDesignProjects';
 
 // import Swiper core and required modules
@@ -20,53 +22,58 @@ import graphicDesignProjects from './constants/graphicDesignProjects';
 
 const GraphicDesign = () => {
 	return (
-		<Content id='GraphicDesign' title='Graphic Design'>
-			{graphicDesignProjects.map((project, index) => {
-				return (
-					<ProjectRow key={index}>
-						<ProjectRowItem>
-							<ProjectRowTitle>{project.title}</ProjectRowTitle>
-							<ProjectRowDescription>
-								{project.description}
-							</ProjectRowDescription>
-						</ProjectRowItem>
-						<ProjectRowItem>
-							<Swiper
-								// install Swiper modules
-								modules={[
-									Navigation,
-									Pagination,
-									Scrollbar,
-									A11y,
-								]}
-								spaceBetween={50}
-								slidesPerView={1}
-								navigation
-								pagination={{ clickable: true }}
-								scrollbar={{ draggable: true }}
-								onSwiper={(swiper) => console.log(swiper)}
-								onSlideChange={() =>
-									console.log('slide change')
-								}
-							>
-								<SwiperSlide>
-									<img
-										src={`${process.env.PUBLIC_URL}/projects/graphic_design/converse/converse_01.webp`}
-										alt='converse'
-									/>
-								</SwiperSlide>
-								<SwiperSlide>
-									<img
-										src={`${process.env.PUBLIC_URL}/projects/graphic_design/converse/converse_02.webp`}
-										alt='converse'
-									/>
-								</SwiperSlide>
-							</Swiper>
-						</ProjectRowItem>
-					</ProjectRow>
-				);
-			})}
-		</Content>
+		<>
+			<Content id='GraphicDesign' title='Graphic Design'>
+				{graphicDesignProjects.map((project, index) => {
+					return (
+						<ProjectRow key={index}>
+							<ProjectRowItem>
+								<ProjectRowTitle>
+									{project.title}
+								</ProjectRowTitle>
+								<ProjectRowDescription>
+									{project.description}
+								</ProjectRowDescription>
+							</ProjectRowItem>
+							<ProjectRowItem>
+								<Swiper
+									// install Swiper modules
+									modules={[
+										Navigation,
+										Pagination,
+										Scrollbar,
+										A11y,
+									]}
+									spaceBetween={50}
+									slidesPerView={1}
+									navigation
+									pagination={{ clickable: true }}
+									scrollbar={{ draggable: true }}
+									onSwiper={(swiper) => console.log(swiper)}
+									onSlideChange={() =>
+										console.log('slide change')
+									}
+								>
+									<SwiperSlide>
+										<img
+											src={`${process.env.PUBLIC_URL}/projects/graphic_design/converse/converse_01.webp`}
+											alt='converse'
+										/>
+									</SwiperSlide>
+									<SwiperSlide>
+										<img
+											src={`${process.env.PUBLIC_URL}/projects/graphic_design/converse/converse_02.webp`}
+											alt='converse'
+										/>
+									</SwiperSlide>
+								</Swiper>
+							</ProjectRowItem>
+						</ProjectRow>
+					);
+				})}
+			</Content>
+			<SwiperOverlay />
+		</>
 	);
 };
 
