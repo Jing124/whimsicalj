@@ -1,0 +1,25 @@
+.widget.CollageGridColumn {
+	flex: 25%;
+	max-width: 25%;
+	@apply px-1;
+
+	* {
+		@apply mt-2;
+		vertical-align: middle;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.widget.CollageGridColumn {
+		flex: 50%;
+		max-width: 50%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.widget.CollageGridColumn {
+		flex: 100%;
+		max-width: 100%;
+	}
+}
