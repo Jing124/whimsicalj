@@ -20,14 +20,8 @@ const MotionDesign = () => {
 							</ProjectRowDescription>
 						</ProjectRowItem>
 						<ProjectRowItem>
-							<video
-								controls
-								poster={`${process.env.PUBLIC_URL}/videos/intro/poster.png`}
-							>
-								<source
-									src={`${process.env.PUBLIC_URL}/videos/intro/intro.mp4`}
-									type='video/mp4'
-								/>
+							<video controls poster={project.poster}>
+								<source src={project.src} type='video/mp4' />
 								Your browser does not support the video tag.
 							</video>
 						</ProjectRowItem>
