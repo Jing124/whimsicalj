@@ -37,7 +37,9 @@ const motionDesignProjects = [
 		title: 'Netflix',
 		description:
 			'My idea of this Brand Animation is the logo of Netflix broke out of the old TV and broke the TV screen. Because I think this represents Netflix as a new era of TV shows production.',
-		linkTo: '/',
+		linkTo: `${RouteUtilModel.ROUTES['3D_MODELING'].get()}/${
+			RouteUtilModel.THREE_D_MODELING_PROJECTS.NETFLIX
+		}`,
 	},
 ];
 

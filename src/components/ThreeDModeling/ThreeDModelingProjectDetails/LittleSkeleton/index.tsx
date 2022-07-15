@@ -20,7 +20,7 @@ const LittleSkeleton = () => {
 					<img
 						className='inline-block'
 						src={`${process.env.PUBLIC_URL}/projects/littleskeleton/skeleton_7.webp`}
-						alt={'side'}
+						alt={'skeleton_7'}
 					/>
 				</CollageGridColumn>
 
@@ -36,17 +36,17 @@ const LittleSkeleton = () => {
 					<img
 						className='inline-block'
 						src={`${process.env.PUBLIC_URL}/projects/littleskeleton/skeleton_4.webp`}
-						alt={'front'}
+						alt={'skeleton_4'}
 					/>
 					<img
 						className='inline-block'
 						src={`${process.env.PUBLIC_URL}/projects/littleskeleton/skeleton_6.webp`}
-						alt={'front'}
+						alt={'skeleton_6'}
 					/>
 					<img
 						className='inline-block'
 						src={`${process.env.PUBLIC_URL}/projects/littleskeleton/skeleton_8.webp`}
-						alt={'front'}
+						alt={'skeleton_8'}
 					/>
 				</CollageGridColumn>
 
@@ -54,7 +54,7 @@ const LittleSkeleton = () => {
 					<img
 						className='inline-block'
 						src={`${process.env.PUBLIC_URL}/projects/littleskeleton/skeleton_5.webp`}
-						alt={'side'}
+						alt={'skeleton_5'}
 					/>
 				</CollageGridColumn>
 			</CollageGrid>

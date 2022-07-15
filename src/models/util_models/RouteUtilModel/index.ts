@@ -4,6 +4,7 @@ class RouteUtilModel {
 		YEAR_OF_TIGER: 'year-of-tiger',
 		OREO_FACTORY: 'oreo-factory',
 		ASTRONAUT_BUNNY: 'astronaut-bunny',
+		NETFLIX: 'netflix',
 	};
 
 	static ROUTES = {

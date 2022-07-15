@@ -3,16 +3,16 @@ import './index.scss';
 import Content from '../../../Content';
 import usePageTitle from '../../../../hooks/usePageTitle';
 
-const AstronautBunny = () => {
-	usePageTitle('Astronaut Bunny | WhimscalJ');
+const Netflix = () => {
+	usePageTitle('Netflix | WhimscalJ');
 	return (
-		<Content id='AstronautBunny' title='Bunny' titleBorderBottom>
+		<Content id='Netflix' title='Bunny' titleBorderBottom>
 			<div className='my-10 grid md:grid-cols-2 gap-5'>
 				<div className='text-center'>
 					<img
 						className='inline-block'
-						src={`${process.env.PUBLIC_URL}/projects/astronaut_bunny/draft.webp`}
-						alt={'draft'}
+						src={`${process.env.PUBLIC_URL}/projects/netflix/draft_01.webp`}
+						alt={'draft_01'}
 					/>
 				</div>
 				<div className='hidden md:block'></div>
@@ -20,15 +20,15 @@ const AstronautBunny = () => {
 				<div className='text-center'>
 					<img
 						className='inline-block'
-						src={`${process.env.PUBLIC_URL}/projects/astronaut_bunny/front.webp`}
-						alt={'front'}
+						src={`${process.env.PUBLIC_URL}/projects/netflix/draft_02.webp`}
+						alt={'draft_02'}
 					/>
 				</div>
 				<div className='text-center'>
 					<img
 						className='inline-block'
-						src={`${process.env.PUBLIC_URL}/projects/astronaut_bunny/right.webp`}
-						alt={'right'}
+						src={`${process.env.PUBLIC_URL}/projects/netflix/design_01.webp`}
+						alt={'design_01'}
 					/>
 				</div>
 				<div className='hidden md:block'></div>
@@ -36,8 +36,8 @@ const AstronautBunny = () => {
 				<div>
 					<img
 						className='inline-block'
-						src={`${process.env.PUBLIC_URL}/projects/astronaut_bunny/back.webp`}
-						alt={'back'}
+						src={`${process.env.PUBLIC_URL}/projects/netflix/design_02.webp`}
+						alt={'design_02'}
 					/>
 				</div>
 			</div>
@@ -57,4 +57,4 @@ const AstronautBunny = () => {
 	);
 };
 
-export default AstronautBunny;
+export default Netflix;
