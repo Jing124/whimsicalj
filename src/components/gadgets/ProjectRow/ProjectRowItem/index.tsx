@@ -1,7 +1,18 @@
 import { ReactNode } from 'react';
 
-const ProjectRowItem = ({ children }: { children: ReactNode }) => {
-	return <div>{children}</div>;
+const ProjectRowItem = ({
+	className = '',
+	children,
+	...attributes
+}: {
+	className?: string;
+	children: ReactNode;
+}) => {
+	return (
+		<div className={`gadget ProjectRowItem ${className}`} {...attributes}>
+			{children}
+		</div>
+	);
 };
 
 export default ProjectRowItem;

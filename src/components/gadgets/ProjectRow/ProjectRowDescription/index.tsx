@@ -1,8 +1,20 @@
 import { ReactNode } from 'react';
 
-const ProjectRowDescription = ({ children }: { children: ReactNode }) => {
+const ProjectRowDescription = ({
+	className = '',
+	children,
+	...attributes
+}: {
+	className?: string;
+	children: ReactNode;
+}) => {
 	return (
-		<div className='text-secondary text-sm mt-10 leading-8'>{children}</div>
+		<div
+			className={`gadget ProjectRowDescription text-secondary text-sm mt-10 leading-8 ${className}`}
+			{...attributes}
+		>
+			{children}
+		</div>
 	);
 };
 

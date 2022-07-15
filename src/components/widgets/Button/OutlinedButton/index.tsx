@@ -64,7 +64,7 @@ const OutlinedButton = ({
 		return (
 			<button className={classes} onClick={onClick} {...attributes}>
 				{Icon ? (
-					<div className='flex flex-wrap gap-2 items-center'>
+					<div className='flex flex-wrap gap-1 items-center'>
 						<div
 							className={
 								iconPosition === 'left'
@@ -74,7 +74,7 @@ const OutlinedButton = ({
 						>
 							<Icon />
 						</div>
-						<div>{children}</div>
+						<div className='self-end'>{children}</div>
 					</div>
 				) : (
 					children
@@ -97,7 +97,7 @@ const OutlinedButton = ({
 						>
 							<Icon />
 						</div>
-						<div>{children}</div>
+						<div className='self-end'>{children}</div>
 					</div>
 				) : (
 					children
@@ -124,7 +124,7 @@ const OutlinedButton = ({
 						>
 							<Icon />
 						</div>
-						<div>{children}</div>
+						<div className='self-end'>{children}</div>
 					</div>
 				) : (
 					children

@@ -1,6 +1,8 @@
 import './index.scss';
 
 import Content from '../Content';
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import OutlinedButton from '../widgets/Button/OutlinedButton';
 import ProjectRow from '../gadgets/ProjectRow';
 import ProjectRowDescription from '../gadgets/ProjectRow/ProjectRowDescription';
 import ProjectRowItem from '../gadgets/ProjectRow/ProjectRowItem';
@@ -13,11 +15,21 @@ const ThreeDModeling = () => {
 			{threeDModelingProjects.map((project, index) => {
 				return (
 					<ProjectRow key={index}>
-						<ProjectRowItem>
+						<ProjectRowItem className='flex flex-col'>
 							<ProjectRowTitle>{project.title}</ProjectRowTitle>
-							<ProjectRowDescription>
+							<ProjectRowDescription className='flex-grow'>
 								{project.description}
 							</ProjectRowDescription>
+							<div>
+								<OutlinedButton
+									Icon={KeyboardArrowRightIcon}
+									iconPosition='right'
+									btnType='link'
+									to='/'
+								>
+									Detail
+								</OutlinedButton>
+							</div>
 						</ProjectRowItem>
 						<ProjectRowItem>
 							<video

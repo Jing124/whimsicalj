@@ -4,21 +4,17 @@
 
 	// Typography
 	font-size: 15px;
-	font-weight: bold;
-	color: black;
+	color: #ffbc00;
 	text-align: center;
 
-	// Border
-	border-radius: 8px;
-
 	// Spacing
-	padding: 14px 20px;
+	padding: 8px 40px;
 
 	// Animations
 	transition: background-color 0.1s ease-in-out, opacity 0.1s ease-in-out,
 		border-color 0.1s ease-in-out;
 
-	border: 1px solid var(--btn-border-color-primary-outlined-l);
+	border: 1px solid #ffbc00;
 
 	background-color: transparent;
 
@@ -29,11 +25,6 @@
 	&:hover {
 		opacity: 0.6;
 	}
-}
-
-.widget.OutlinedButton.dark {
-	color: var(--text-color-primary-d);
-	border-color: var(--btn-border-color-primary-outlined-d);
 }
 
 .widget.OutlinedButton.small {
