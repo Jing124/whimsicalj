@@ -11,7 +11,7 @@ const AstronautBunny = () => {
 				<div className='text-center'>
 					<img
 						className='inline-block'
-						src={`${process.env.PUBLIC_URL}/projects/astronaut_bunny/draft.webp`}
+						src={`${process.env.PUBLIC_URL}/projects/3d_modeling/astronaut_bunny/draft.webp`}
 						alt={'draft'}
 					/>
 				</div>
@@ -20,14 +20,14 @@ const AstronautBunny = () => {
 				<div className='text-center'>
 					<img
 						className='inline-block'
-						src={`${process.env.PUBLIC_URL}/projects/astronaut_bunny/front.webp`}
+						src={`${process.env.PUBLIC_URL}/projects/3d_modeling/astronaut_bunny/front.webp`}
 						alt={'front'}
 					/>
 				</div>
 				<div className='text-center'>
 					<img
 						className='inline-block'
-						src={`${process.env.PUBLIC_URL}/projects/astronaut_bunny/right.webp`}
+						src={`${process.env.PUBLIC_URL}/projects/3d_modeling/astronaut_bunny/right.webp`}
 						alt={'right'}
 					/>
 				</div>
@@ -36,7 +36,7 @@ const AstronautBunny = () => {
 				<div>
 					<img
 						className='inline-block'
-						src={`${process.env.PUBLIC_URL}/projects/astronaut_bunny/back.webp`}
+						src={`${process.env.PUBLIC_URL}/projects/3d_modeling/astronaut_bunny/back.webp`}
 						alt={'back'}
 					/>
 				</div>

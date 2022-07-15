@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 
+import GraphicDesign from './components/GraphicDesign';
 import Home from './components/Home';
 import Layout from './components/Layout';
 import MotionDesign from './components/MotionDesign';
@@ -16,6 +17,10 @@ const App = () => {
 				<Route
 					path='/3d-modeling/:project'
 					element={<ThreeDModelingProjectDetails />}
+				></Route>
+				<Route
+					path='/graphic-design'
+					element={<GraphicDesign />}
 				></Route>
 			</Routes>
 		</Layout>

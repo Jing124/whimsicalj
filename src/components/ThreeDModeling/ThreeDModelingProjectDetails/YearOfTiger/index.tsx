@@ -13,12 +13,12 @@ const YearOfTiger = () => {
 				<CollageGridColumn>
 					<img
 						className='inline-block'
-						src={`${process.env.PUBLIC_URL}/projects/year_of_tiger/front.webp`}
+						src={`${process.env.PUBLIC_URL}/projects/3d_modeling/year_of_tiger/front.webp`}
 						alt={'front'}
 					/>
 					<img
 						className='inline-block'
-						src={`${process.env.PUBLIC_URL}/projects/year_of_tiger/back.webp`}
+						src={`${process.env.PUBLIC_URL}/projects/3d_modeling/year_of_tiger/back.webp`}
 						alt={'back'}
 					/>
 				</CollageGridColumn>
@@ -26,7 +26,7 @@ const YearOfTiger = () => {
 				<CollageGridColumn>
 					<img
 						className='inline-block'
-						src={`${process.env.PUBLIC_URL}/projects/year_of_tiger/side.webp`}
+						src={`${process.env.PUBLIC_URL}/projects/3d_modeling/year_of_tiger/side.webp`}
 						alt={'side'}
 					/>
 					<video

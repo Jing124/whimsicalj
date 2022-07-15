@@ -11,7 +11,7 @@ const OreoFactory = () => {
 				<div className='text-center'>
 					<img
 						className='inline-block'
-						src={`${process.env.PUBLIC_URL}/projects/oreo_factory/draft.webp`}
+						src={`${process.env.PUBLIC_URL}/projects/3d_modeling/oreo_factory/draft.webp`}
 						alt={'draft'}
 					/>
 				</div>
@@ -20,14 +20,14 @@ const OreoFactory = () => {
 				<div className='text-center'>
 					<img
 						className='inline-block'
-						src={`${process.env.PUBLIC_URL}/projects/oreo_factory/oreo_cookies.webp`}
+						src={`${process.env.PUBLIC_URL}/projects/3d_modeling/oreo_factory/oreo_cookies.webp`}
 						alt={'oreo_cookies'}
 					/>
 				</div>
 				<div className='text-center'>
 					<img
 						className='inline-block'
-						src={`${process.env.PUBLIC_URL}/projects/oreo_factory/oreo_machine_front.webp`}
+						src={`${process.env.PUBLIC_URL}/projects/3d_modeling/oreo_factory/oreo_machine_front.webp`}
 						alt={'oreo_machine_front'}
 					/>
 				</div>
@@ -36,7 +36,7 @@ const OreoFactory = () => {
 				<div>
 					<img
 						className='inline-block'
-						src={`${process.env.PUBLIC_URL}/projects/oreo_factory/oreo_machine.webp`}
+						src={`${process.env.PUBLIC_URL}/projects/3d_modeling/oreo_factory/oreo_machine.webp`}
 						alt={'oreo_machine'}
 					/>
 				</div>

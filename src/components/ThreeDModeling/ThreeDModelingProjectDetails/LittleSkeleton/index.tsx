@@ -14,12 +14,12 @@ const LittleSkeleton = () => {
 				<CollageGridColumn>
 					<img
 						className='inline-block'
-						src={`${process.env.PUBLIC_URL}/projects/littleskeleton/front.webp`}
+						src={`${process.env.PUBLIC_URL}/projects/3d_modeling/littleskeleton/front.webp`}
 						alt={'front'}
 					/>
 					<img
 						className='inline-block'
-						src={`${process.env.PUBLIC_URL}/projects/littleskeleton/skeleton_7.webp`}
+						src={`${process.env.PUBLIC_URL}/projects/3d_modeling/littleskeleton/skeleton_7.webp`}
 						alt={'skeleton_7'}
 					/>
 				</CollageGridColumn>
@@ -27,7 +27,7 @@ const LittleSkeleton = () => {
 				<CollageGridColumn>
 					<img
 						className='inline-block'
-						src={`${process.env.PUBLIC_URL}/projects/littleskeleton/side.webp`}
+						src={`${process.env.PUBLIC_URL}/projects/3d_modeling/littleskeleton/side.webp`}
 						alt={'side'}
 					/>
 				</CollageGridColumn>
@@ -35,17 +35,17 @@ const LittleSkeleton = () => {
 				<CollageGridColumn>
 					<img
 						className='inline-block'
-						src={`${process.env.PUBLIC_URL}/projects/littleskeleton/skeleton_4.webp`}
+						src={`${process.env.PUBLIC_URL}/projects/3d_modeling/littleskeleton/skeleton_4.webp`}
 						alt={'skeleton_4'}
 					/>
 					<img
 						className='inline-block'
-						src={`${process.env.PUBLIC_URL}/projects/littleskeleton/skeleton_6.webp`}
+						src={`${process.env.PUBLIC_URL}/projects/3d_modeling/littleskeleton/skeleton_6.webp`}
 						alt={'skeleton_6'}
 					/>
 					<img
 						className='inline-block'
-						src={`${process.env.PUBLIC_URL}/projects/littleskeleton/skeleton_8.webp`}
+						src={`${process.env.PUBLIC_URL}/projects/3d_modeling/littleskeleton/skeleton_8.webp`}
 						alt={'skeleton_8'}
 					/>
 				</CollageGridColumn>
@@ -53,7 +53,7 @@ const LittleSkeleton = () => {
 				<CollageGridColumn>
 					<img
 						className='inline-block'
-						src={`${process.env.PUBLIC_URL}/projects/littleskeleton/skeleton_5.webp`}
+						src={`${process.env.PUBLIC_URL}/projects/3d_modeling/littleskeleton/skeleton_5.webp`}
 						alt={'skeleton_5'}
 					/>
 				</CollageGridColumn>

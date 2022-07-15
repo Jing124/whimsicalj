@@ -1,0 +1,11 @@
+#GraphicDesign {
+	.swiper-button-prev,
+	.swiper-button-next {
+		color: white;
+
+		&::after {
+			@apply text-2xl;
+			@apply font-bold;
+		}
+	}
+}

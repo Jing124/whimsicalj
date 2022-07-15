@@ -11,7 +11,7 @@ const Netflix = () => {
 				<div className='text-center'>
 					<img
 						className='inline-block'
-						src={`${process.env.PUBLIC_URL}/projects/netflix/draft_01.webp`}
+						src={`${process.env.PUBLIC_URL}/projects/3d_modeling/netflix/draft_01.webp`}
 						alt={'draft_01'}
 					/>
 				</div>
@@ -20,14 +20,14 @@ const Netflix = () => {
 				<div className='text-center'>
 					<img
 						className='inline-block'
-						src={`${process.env.PUBLIC_URL}/projects/netflix/draft_02.webp`}
+						src={`${process.env.PUBLIC_URL}/projects/3d_modeling/netflix/draft_02.webp`}
 						alt={'draft_02'}
 					/>
 				</div>
 				<div className='text-center'>
 					<img
 						className='inline-block'
-						src={`${process.env.PUBLIC_URL}/projects/netflix/design_01.webp`}
+						src={`${process.env.PUBLIC_URL}/projects/3d_modeling/netflix/design_01.webp`}
 						alt={'design_01'}
 					/>
 				</div>
@@ -36,7 +36,7 @@ const Netflix = () => {
 				<div>
 					<img
 						className='inline-block'
-						src={`${process.env.PUBLIC_URL}/projects/netflix/design_02.webp`}
+						src={`${process.env.PUBLIC_URL}/projects/3d_modeling/netflix/design_02.webp`}
 						alt={'design_02'}
 					/>
 				</div>
