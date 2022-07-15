@@ -18,9 +18,11 @@ import { useEffect } from 'react';
 const SwiperOverlay = ({
 	open,
 	onClose,
+	images,
 }: {
 	open: boolean;
 	onClose?: () => void;
+	images: Array<string>;
 }) => {
 	const lockBodyScroll = useLockBodyScroll();
 	const unlockBodyScroll = useUnlockBodyScroll();
@@ -52,20 +54,13 @@ const SwiperOverlay = ({
 				onSlideChange={() => console.log('slide change')}
 				className='w-full h-full'
 			>
-				<SwiperSlide className='flex justify-center'>
-					<img
-						className='m-auto'
-						src={`${process.env.PUBLIC_URL}/projects/graphic_design/converse/converse_01.webp`}
-						alt='converse'
-					/>
-				</SwiperSlide>
-				<SwiperSlide className='flex justify-center'>
-					<img
-						className='m-auto'
-						src={`${process.env.PUBLIC_URL}/projects/graphic_design/converse/converse_02.webp`}
-						alt='converse'
-					/>
-				</SwiperSlide>
+				{images.map((img, index) => {
+					return (
+						<SwiperSlide className='flex justify-center'>
+							<img src={img} alt='img' className='m-auto' />
+						</SwiperSlide>
+					);
+				})}
 			</Swiper>
 		</div>
 	) : (

@@ -23,8 +23,10 @@ import graphicDesignProjects from './constants/graphicDesignProjects';
 
 const GraphicDesign = () => {
 	const [overlayOpen, setOpenLayOpen] = useState(false);
+	const [images, setImages] = useState<Array<string>>([]);
 
-	const handleSwiperOnClick = useCallback(() => {
+	const handleSwiperOnClick = useCallback((_images: Array<string>) => {
+		setImages(_images);
 		setOpenLayOpen(true);
 	}, []);
 
@@ -48,7 +50,6 @@ const GraphicDesign = () => {
 							</ProjectRowItem>
 							<ProjectRowItem>
 								<Swiper
-									// install Swiper modules
 									modules={[
 										Navigation,
 										Pagination,
@@ -60,30 +61,36 @@ const GraphicDesign = () => {
 									navigation
 									pagination={{ clickable: true }}
 									scrollbar={{ draggable: true }}
-									onSwiper={(swiper) => console.log(swiper)}
-									onSlideChange={() =>
-										console.log('slide change')
-									}
+									className='cursor-pointer'
 								>
-									<SwiperSlide onClick={handleSwiperOnClick}>
-										<img
-											src={`${process.env.PUBLIC_URL}/projects/graphic_design/converse/converse_01.webp`}
-											alt='converse'
-										/>
-									</SwiperSlide>
-									<SwiperSlide onClick={handleSwiperOnClick}>
-										<img
-											src={`${process.env.PUBLIC_URL}/projects/graphic_design/converse/converse_02.webp`}
-											alt='converse'
-										/>
-									</SwiperSlide>
+									{project.images.map((img, index) => {
+										return (
+											<SwiperSlide
+												key={index}
+												onClick={() => {
+													handleSwiperOnClick(
+														project.images
+													);
+												}}
+											>
+												<img
+													src={img}
+													alt={project.title}
+												/>
+											</SwiperSlide>
+										);
+									})}
 								</Swiper>
 							</ProjectRowItem>
 						</ProjectRow>
 					);
 				})}
 			</Content>
-			<SwiperOverlay open={overlayOpen} onClose={handleSwiperOnClose} />
+			<SwiperOverlay
+				open={overlayOpen}
+				onClose={handleSwiperOnClose}
+				images={images}
+			/>
 		</>
 	);
 };
