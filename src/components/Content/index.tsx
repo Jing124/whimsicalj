@@ -21,7 +21,9 @@ const Content = ({
 					{title ?? ''}
 				</div>
 			)}
-			<div className={`${title ? 'pt-10' : 'pt-40'}`}>{children}</div>
+			<div className={`${title ? 'md:pt-10' : 'pt-5 md:pt-40'}`}>
+				{children}
+			</div>
 		</Container>
 	);
 };

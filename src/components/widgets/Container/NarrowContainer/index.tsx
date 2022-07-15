@@ -10,7 +10,7 @@ const NarrowContainer = ({
 }) => {
 	return (
 		<div
-			className={`widget NarrowContainer flex justify-between px-10 ${className}`}
+			className={`widget NarrowContainer flex justify-between px-5 md:px-10 ${className}`}
 			{...attributes}
 		>
 			{children}
