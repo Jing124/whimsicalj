@@ -1,6 +1,6 @@
 .widget.CollageGridColumn {
-	flex: 25%;
-	max-width: 25%;
+	flex: 100%;
+	max-width: 100%;
 	@apply px-1;
 
 	* {
@@ -10,16 +10,16 @@
 	}
 }
 
-@media screen and (max-width: 800px) {
+@screen sm {
 	.widget.CollageGridColumn {
 		flex: 50%;
 		max-width: 50%;
 	}
 }
 
-@media screen and (max-width: 600px) {
+@screen lg {
 	.widget.CollageGridColumn {
-		flex: 100%;
-		max-width: 100%;
+		flex: 25%;
+		max-width: 25%;
 	}
 }
