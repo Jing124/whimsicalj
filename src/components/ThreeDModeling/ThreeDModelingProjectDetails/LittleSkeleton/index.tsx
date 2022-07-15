@@ -16,8 +16,8 @@ const LittleSkeleton = () => {
 					/>
 					<img
 						className='inline-block'
-						src={`${process.env.PUBLIC_URL}/projects/littleskeleton/skeleton_4.webp`}
-						alt={'front'}
+						src={`${process.env.PUBLIC_URL}/projects/littleskeleton/skeleton_7.webp`}
+						alt={'side'}
 					/>
 				</CollageGridColumn>
 
@@ -32,12 +32,17 @@ const LittleSkeleton = () => {
 				<CollageGridColumn>
 					<img
 						className='inline-block'
-						src={`${process.env.PUBLIC_URL}/projects/littleskeleton/skeleton_5.webp`}
-						alt={'side'}
+						src={`${process.env.PUBLIC_URL}/projects/littleskeleton/skeleton_4.webp`}
+						alt={'front'}
 					/>
 					<img
 						className='inline-block'
 						src={`${process.env.PUBLIC_URL}/projects/littleskeleton/skeleton_6.webp`}
+						alt={'front'}
+					/>
+					<img
+						className='inline-block'
+						src={`${process.env.PUBLIC_URL}/projects/littleskeleton/skeleton_8.webp`}
 						alt={'front'}
 					/>
 				</CollageGridColumn>
@@ -45,16 +50,24 @@ const LittleSkeleton = () => {
 				<CollageGridColumn>
 					<img
 						className='inline-block'
-						src={`${process.env.PUBLIC_URL}/projects/littleskeleton/skeleton_8.webp`}
-						alt={'front'}
-					/>
-					<img
-						className='inline-block'
-						src={`${process.env.PUBLIC_URL}/projects/littleskeleton/skeleton_7.webp`}
+						src={`${process.env.PUBLIC_URL}/projects/littleskeleton/skeleton_5.webp`}
 						alt={'side'}
 					/>
 				</CollageGridColumn>
 			</CollageGrid>
+
+			<div className='mb-10'>
+				<video
+					controls
+					poster={`${process.env.PUBLIC_URL}/videos/intro/poster.png`}
+				>
+					<source
+						src={`${process.env.PUBLIC_URL}/videos/intro/intro.mp4`}
+						type='video/mp4'
+					/>
+					Your browser does not support the video tag.
+				</video>
+			</div>
 		</Content>
 	);
 };
