@@ -17,8 +17,11 @@ import ProjectRowItem from '../gadgets/ProjectRow/ProjectRowItem';
 import ProjectRowTitle from '../gadgets/ProjectRow/ProjectRowTitle';
 import SwiperOverlay from '../widgets/Overlay/SwiperOverlay';
 import threeDModelingProjects from './constants/threeDModelingProjects';
+import usePageTitle from '../../hooks/usePageTitle';
 
 const ThreeDModeling = () => {
+	usePageTitle('3D Modeling | WhimsicalJ');
+
 	const [overlayOpen, setOpenLayOpen] = useState(false);
 	const [images, setImages] = useState<Array<string>>([]);
 
