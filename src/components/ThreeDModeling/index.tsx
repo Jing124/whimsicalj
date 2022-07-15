@@ -11,7 +11,7 @@ import threeDModelingProjects from './constants/threeDModelingProjects';
 
 const ThreeDModeling = () => {
 	return (
-		<Content id='ThreeDModeling' title='Motion Design'>
+		<Content id='ThreeDModeling' title='3D Modeling'>
 			{threeDModelingProjects.map((project, index) => {
 				return (
 					<ProjectRow key={index}>

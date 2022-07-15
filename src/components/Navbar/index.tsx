@@ -15,7 +15,6 @@ const Navbar = () => {
 	const isMobileLayout = useMobileLayout();
 
 	const [openMobileNavMenu, setOpenMobileNavMenu] = useState(false);
-
 	const location = useLocation();
 
 	useEffect(() => {
@@ -23,6 +22,10 @@ const Navbar = () => {
 			setOpenMobileNavMenu(false);
 		}
 	}, [isMobileLayout]);
+
+	useEffect(() => {
+		setOpenMobileNavMenu(false);
+	}, [location]);
 
 	return (
 		<nav id='Navbar' className={`py-6 z-10`}>
