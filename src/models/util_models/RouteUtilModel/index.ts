@@ -3,6 +3,7 @@ class RouteUtilModel {
 		LITTLE_SKELETON: 'little-skeleton',
 		YEAR_OF_TIGER: 'year-of-tiger',
 		OREO_FACTORY: 'oreo-factory',
+		ASTRONAUT_BUNNY: 'astronaut-bunny',
 	};
 
 	static ROUTES = {

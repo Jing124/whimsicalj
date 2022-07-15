@@ -29,7 +29,9 @@ const motionDesignProjects = [
 		title: 'Astronaut-Bunny',
 		description:
 			'The design of this project is inspired by the traditional Chinese festival Mid-Autumn Festival. I anthropomorphize the jade rabbit in the traditional festival so that the rabbit can wear a spacesuit that can live in space and on the moon.',
-		linkTo: '/',
+		linkTo: `${RouteUtilModel.ROUTES['3D_MODELING'].get()}/${
+			RouteUtilModel.THREE_D_MODELING_PROJECTS.ASTRONAUT_BUNNY
+		}`,
 	},
 	{
 		title: 'Netflix',

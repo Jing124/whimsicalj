@@ -1,3 +1,4 @@
+import AstronautBunny from './AstronautBunny';
 import LittleSkeleton from './LittleSkeleton';
 import OreoFactory from './OreoFactory';
 import RouteUtilModel from '../../../models/util_models/RouteUtilModel';
@@ -12,6 +13,8 @@ const Content = ({ project }: { project: string }) => {
 			return <YearOfTiger />;
 		case RouteUtilModel.THREE_D_MODELING_PROJECTS.OREO_FACTORY:
 			return <OreoFactory />;
+		case RouteUtilModel.THREE_D_MODELING_PROJECTS.ASTRONAUT_BUNNY:
+			return <AstronautBunny />;
 		default:
 			break;
 	}

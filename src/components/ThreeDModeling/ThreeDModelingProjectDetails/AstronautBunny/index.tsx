@@ -3,15 +3,15 @@ import './index.scss';
 import Content from '../../../Content';
 import usePageTitle from '../../../../hooks/usePageTitle';
 
-const OreoFactory = () => {
-	usePageTitle('The Oreo Factory | WhimscalJ');
+const AstronautBunny = () => {
+	usePageTitle('Astronaut Bunny | WhimscalJ');
 	return (
-		<Content id='OreoFactory' title='The Oreo Factory' titleBorderBottom>
+		<Content id='AstronautBunny' title='Bunny' titleBorderBottom>
 			<div className='my-10 grid md:grid-cols-2 gap-5'>
 				<div className='text-center'>
 					<img
 						className='inline-block'
-						src={`${process.env.PUBLIC_URL}/projects/oreo_factory/draft.webp`}
+						src={`${process.env.PUBLIC_URL}/projects/astronaut_bunny/draft.webp`}
 						alt={'front'}
 					/>
 				</div>
@@ -20,14 +20,14 @@ const OreoFactory = () => {
 				<div className='text-center'>
 					<img
 						className='inline-block'
-						src={`${process.env.PUBLIC_URL}/projects/oreo_factory/oreo_cookies.webp`}
+						src={`${process.env.PUBLIC_URL}/projects/astronaut_bunny/front.webp`}
 						alt={'back'}
 					/>
 				</div>
 				<div className='text-center'>
 					<img
 						className='inline-block'
-						src={`${process.env.PUBLIC_URL}/projects/oreo_factory/oreo_machine_front.webp`}
+						src={`${process.env.PUBLIC_URL}/projects/astronaut_bunny/right.webp`}
 						alt={'side'}
 					/>
 				</div>
@@ -36,7 +36,7 @@ const OreoFactory = () => {
 				<div>
 					<img
 						className='inline-block'
-						src={`${process.env.PUBLIC_URL}/projects/oreo_factory/oreo_machine.webp`}
+						src={`${process.env.PUBLIC_URL}/projects/astronaut_bunny/back.webp`}
 						alt={'side'}
 					/>
 				</div>
@@ -57,4 +57,4 @@ const OreoFactory = () => {
 	);
 };
 
-export default OreoFactory;
+export default AstronautBunny;
