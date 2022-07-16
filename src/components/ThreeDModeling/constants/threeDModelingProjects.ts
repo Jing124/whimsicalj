@@ -30,7 +30,7 @@ const motionDesignProjects = [
 			RouteUtilModel.THREE_D_MODELING_PROJECTS.LITTLE_SKELETON
 		}`,
 		src: `${process.env.PUBLIC_URL}/projects/3d_modeling/littleskeleton/skeleton.mp4`,
-		poster: `${process.env.PUBLIC_URL}/projects/3d_modeling/littleskeleton/poster.png`,
+		poster: `${process.env.PUBLIC_URL}/projects/3d_modeling/littleskeleton/poster.jpg`,
 	},
 	{
 		title: 'The Year Of Tiger',
