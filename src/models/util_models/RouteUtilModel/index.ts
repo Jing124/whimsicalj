@@ -18,7 +18,7 @@ class RouteUtilModel {
 				return '/motion-design';
 			},
 		},
-		['3D_MODELING']: {
+		'3D_MODELING': {
 			get: () => {
 				return '/3d-modeling';
 			},

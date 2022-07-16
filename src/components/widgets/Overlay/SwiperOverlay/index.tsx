@@ -19,10 +19,12 @@ const SwiperOverlay = ({
 	open,
 	onClose,
 	images,
+	initialSlide = 0,
 }: {
 	open: boolean;
 	onClose?: () => void;
 	images: Array<string>;
+	initialSlide?: number;
 }) => {
 	const lockBodyScroll = useLockBodyScroll();
 	const unlockBodyScroll = useUnlockBodyScroll();
@@ -33,7 +35,7 @@ const SwiperOverlay = ({
 		} else {
 			unlockBodyScroll();
 		}
-	}, [open]);
+	}, [open, lockBodyScroll, unlockBodyScroll]);
 
 	return open ? (
 		<div className='widget SwiperOverlay fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 z-30 '>
@@ -50,6 +52,7 @@ const SwiperOverlay = ({
 				navigation
 				pagination={{ clickable: true }}
 				scrollbar={{ draggable: true }}
+				initialSlide={initialSlide}
 				className='w-full h-full'
 			>
 				{images.map((img, index) => {

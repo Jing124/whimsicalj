@@ -15,6 +15,7 @@ import ProjectRow from '../gadgets/ProjectRow';
 import ProjectRowDescription from '../gadgets/ProjectRow/ProjectRowDescription';
 import ProjectRowItem from '../gadgets/ProjectRow/ProjectRowItem';
 import ProjectRowTitle from '../gadgets/ProjectRow/ProjectRowTitle';
+import { default as SwiperClass } from 'swiper/types/swiper-class';
 import SwiperOverlay from '../widgets/Overlay/SwiperOverlay';
 import threeDModelingProjects from './constants/threeDModelingProjects';
 import usePageTitle from '../../hooks/usePageTitle';
@@ -24,6 +25,7 @@ const ThreeDModeling = () => {
 
 	const [overlayOpen, setOpenLayOpen] = useState(false);
 	const [images, setImages] = useState<Array<string>>([]);
+	const [slideIndex, setSlideIndex] = useState(0);
 
 	const handleSwiperOnClick = useCallback((_images: Array<string>) => {
 		setImages(_images);
@@ -32,6 +34,10 @@ const ThreeDModeling = () => {
 
 	const handleSwiperOnClose = useCallback(() => {
 		setOpenLayOpen(false);
+	}, []);
+
+	const handleSwiperOnChange = useCallback((swiper: SwiperClass) => {
+		setSlideIndex(swiper.realIndex);
 	}, []);
 
 	return (
@@ -61,7 +67,7 @@ const ThreeDModeling = () => {
 								)}
 							</ProjectRowItem>
 							<ProjectRowItem>
-								{project.images ? (
+								{project.banners ? (
 									<Swiper
 										modules={[
 											Navigation,
@@ -74,9 +80,11 @@ const ThreeDModeling = () => {
 										navigation
 										pagination={{ clickable: true }}
 										scrollbar={{ draggable: true }}
+										loop={true}
 										className='cursor-pointer'
+										onSlideChange={handleSwiperOnChange}
 									>
-										{project.images.map((img, index) => {
+										{project.banners.map((img, index) => {
 											return (
 												<SwiperSlide
 													key={index}
@@ -113,6 +121,7 @@ const ThreeDModeling = () => {
 				open={overlayOpen}
 				onClose={handleSwiperOnClose}
 				images={images}
+				initialSlide={slideIndex}
 			/>
 		</>
 	);

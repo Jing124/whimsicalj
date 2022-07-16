@@ -10,6 +10,16 @@ const motionDesignProjects = [
 			`${process.env.PUBLIC_URL}/projects/3d_modeling/collision_across_the_ages/02.webp`,
 			`${process.env.PUBLIC_URL}/projects/3d_modeling/collision_across_the_ages/03.webp`,
 			`${process.env.PUBLIC_URL}/projects/3d_modeling/collision_across_the_ages/04.webp`,
+			`${process.env.PUBLIC_URL}/projects/3d_modeling/collision_across_the_ages/05.webp`,
+			`${process.env.PUBLIC_URL}/projects/3d_modeling/collision_across_the_ages/06.webp`,
+		],
+		banners: [
+			`${process.env.PUBLIC_URL}/projects/3d_modeling/collision_across_the_ages/banners/01.webp`,
+			`${process.env.PUBLIC_URL}/projects/3d_modeling/collision_across_the_ages/banners/02.webp`,
+			`${process.env.PUBLIC_URL}/projects/3d_modeling/collision_across_the_ages/banners/03.webp`,
+			`${process.env.PUBLIC_URL}/projects/3d_modeling/collision_across_the_ages/banners/04.webp`,
+			`${process.env.PUBLIC_URL}/projects/3d_modeling/collision_across_the_ages/banners/05.webp`,
+			`${process.env.PUBLIC_URL}/projects/3d_modeling/collision_across_the_ages/banners/06.webp`,
 		],
 	},
 	{
