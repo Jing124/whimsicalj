@@ -6,6 +6,7 @@ import Layout from './components/Layout';
 import MotionDesign from './components/MotionDesign';
 import ThreeDModeling from './components/ThreeDModeling';
 import ThreeDModelingProjectDetails from './components/ThreeDModeling/ThreeDModelingProjectDetails';
+import VideoEditing from './components/VideoEditing';
 
 const App = () => {
 	return (
@@ -22,6 +23,7 @@ const App = () => {
 					path='/graphic-design'
 					element={<GraphicDesign />}
 				></Route>
+				<Route path='/video-editing' element={<VideoEditing />}></Route>
 			</Routes>
 		</Layout>
 	);
