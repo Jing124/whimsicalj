@@ -1,15 +1,14 @@
 import './index.scss';
 
-import Container from '../widgets/Container';
+import Content from '../Content';
 import FilledButton from '../widgets/Button/FilledButton';
 import LabelInput from '../widgets/Input/LabelInput';
 import LabelTextareaInput from '../widgets/Input/LabelTextareaInput';
-import SendIcon from '@mui/icons-material/Send';
 
 const Contact = () => {
 	return (
-		<Container id='Contact'>
-			<div className='my-10 grid md:grid-cols-2 justify-center gap-10'>
+		<Content id='Contact'>
+			<div className='grid md:grid-cols-2 justify-center gap-10'>
 				<div>
 					<div className='flex flex-col'>
 						<div>
@@ -34,26 +33,37 @@ const Contact = () => {
 						</div>
 					</div>
 				</div>
-				<div>
-					<div className='grid grid-cols-2 gap-8'>
-						<LabelInput
-							className='w-full'
-							labelElement={'First Name'}
-						/>
-						<LabelInput
-							className='w-full'
-							labelElement={'Last Name'}
-						/>
-						<LabelInput
-							className='w-full'
-							labelElement={'Email *'}
-						/>
-						<LabelInput
-							className='w-full'
-							labelElement={'Subject'}
-						/>
-						<div className='col-span-2'>
-							<LabelTextareaInput labelElement={'Message'} />
+				<div className='flex flex-col'>
+					<div className='grid sm:grid-cols-2 gap-8 flex-grow'>
+						<div>
+							<LabelInput
+								className='w-full'
+								labelElement={'First Name *'}
+							/>
+						</div>
+						<div>
+							<LabelInput
+								className='w-full'
+								labelElement={'Last Name *'}
+							/>
+						</div>
+						<div>
+							<LabelInput
+								className='w-full'
+								labelElement={'Email *'}
+							/>
+						</div>
+						<div>
+							<LabelInput
+								className='w-full'
+								labelElement={'Subject *'}
+							/>
+						</div>
+						<div className='sm:col-span-2'>
+							<LabelTextareaInput
+								className='w-full'
+								labelElement={'Message *'}
+							/>
 						</div>
 					</div>
 					<div className='mt-5'>
@@ -63,7 +73,7 @@ const Contact = () => {
 					</div>
 				</div>
 			</div>
-		</Container>
+		</Content>
 	);
 };
 
