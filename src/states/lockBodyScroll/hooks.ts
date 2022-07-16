@@ -1,8 +1,8 @@
 import { AppState, useAppDispatch } from '../../app/hooks';
 import { lockBodyScroll, unlockBodyScroll } from './lockBodyScrollSlice';
-import { useDispatch, useSelector } from 'react-redux';
 
 import { useCallback } from 'react';
+import { useSelector } from 'react-redux';
 
 export const useIsBodyScrollLocked = (): boolean => {
 	return useSelector((state: AppState) => state.lockBodyScroll);

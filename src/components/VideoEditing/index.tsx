@@ -12,7 +12,7 @@ const VideoEditing = () => {
 	usePageTitle('Video Editing | WhimsicalJ');
 
 	return (
-		<Content id='VideoEditing' title='3D Modeling'>
+		<Content id='VideoEditing' title='Video Editing'>
 			{videoEditingProjects.map((project, index) => {
 				return (
 					<ProjectRow key={index}>
@@ -23,10 +23,17 @@ const VideoEditing = () => {
 							</ProjectRowDescription>
 						</ProjectRowItem>
 						<ProjectRowItem>
-							<video controls poster={project.poster}>
-								<source src={project.src} type='video/mp4' />
-								Your browser does not support the video tag.
-							</video>
+							{project.src ? (
+								<video controls poster={project.poster}>
+									<source
+										src={project.src}
+										type='video/mp4'
+									/>
+									Your browser does not support the video tag.
+								</video>
+							) : (
+								project.embed
+							)}
 						</ProjectRowItem>
 					</ProjectRow>
 				);

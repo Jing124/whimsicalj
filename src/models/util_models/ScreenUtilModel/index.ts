@@ -1,7 +1,4 @@
-import { useEffect, useState } from 'react';
-
 import { createTheme } from '@mui/material';
-import useWindowSize from './hooks/useWindowSize';
 
 class ScreenUtilModel {
 	static XS = 300;

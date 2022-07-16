@@ -1,11 +1,6 @@
 import './index.scss';
 
-import {
-	ButtonHTMLAttributes,
-	HTMLAttributes,
-	MouseEventHandler,
-	ReactNode,
-} from 'react';
+import { ButtonHTMLAttributes, MouseEventHandler, ReactNode } from 'react';
 import { IconButtonProps, IconButton as MuiIconButton } from '@mui/material';
 
 const IconButton = ({

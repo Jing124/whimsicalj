@@ -49,7 +49,7 @@ const motionDesignProjects = [
 		linkTo: `${RouteUtilModel.ROUTES['3D_MODELING'].get()}/${
 			RouteUtilModel.THREE_D_MODELING_PROJECTS.OREO_FACTORY
 		}`,
-		src: `${process.env.PUBLIC_URL}/projects/3d_modeling/oreo_factory/oero.mp4`,
+		src: `${process.env.PUBLIC_URL}/projects/3d_modeling/oreo_factory/oreo.mp4`,
 		poster: `${process.env.PUBLIC_URL}/projects/3d_modeling/oreo_factory/poster.png`,
 	},
 	{
@@ -60,7 +60,7 @@ const motionDesignProjects = [
 			RouteUtilModel.THREE_D_MODELING_PROJECTS.ASTRONAUT_BUNNY
 		}`,
 		src: `${process.env.PUBLIC_URL}/projects/3d_modeling/astronaut_bunny/bunny.mp4`,
-		poster: `${process.env.PUBLIC_URL}/projects/3d_modeling/astronaut_bunny/poster.png`,
+		poster: `${process.env.PUBLIC_URL}/projects/3d_modeling/astronaut_bunny/poster.jpg`,
 	},
 	{
 		title: 'Netflix',
