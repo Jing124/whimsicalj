@@ -12,7 +12,7 @@ const Content = ({
 	...attributes
 }: {
 	className?: string;
-	title?: string;
+	title?: ReactNode;
 	titleBorderBottom?: boolean;
 	children: ReactNode;
 }) => {

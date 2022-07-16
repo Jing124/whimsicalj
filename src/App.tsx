@@ -4,6 +4,7 @@ import GraphicDesign from './components/GraphicDesign';
 import Home from './components/Home';
 import Layout from './components/Layout';
 import MotionDesign from './components/MotionDesign';
+import Resume from './components/Resume';
 import ThreeDModeling from './components/ThreeDModeling';
 import ThreeDModelingProjectDetails from './components/ThreeDModeling/ThreeDModelingProjectDetails';
 import UxUi from './components/UxUi';
@@ -26,6 +27,7 @@ const App = () => {
 				></Route>
 				<Route path='/video-editing' element={<VideoEditing />}></Route>
 				<Route path='/ux-ui' element={<UxUi />}></Route>
+				<Route path='/resume' element={<Resume />}></Route>
 			</Routes>
 		</Layout>
 	);
