@@ -7,6 +7,10 @@ const motionDesignProjects = [
 			`${process.env.PUBLIC_URL}/projects/graphic_design/converse/converse_01.webp`,
 			`${process.env.PUBLIC_URL}/projects/graphic_design/converse/converse_02.webp`,
 		],
+		banners: [
+			`${process.env.PUBLIC_URL}/projects/graphic_design/converse/banners/converse_01.webp`,
+			`${process.env.PUBLIC_URL}/projects/graphic_design/converse/banners/converse_02.webp`,
+		],
 	},
 	{
 		title: 'Honors Convocation NYCCT 2022',
@@ -18,6 +22,7 @@ const motionDesignProjects = [
 			`${process.env.PUBLIC_URL}/projects/graphic_design/honors_convocation/honors_convocation_03.webp`,
 			`${process.env.PUBLIC_URL}/projects/graphic_design/honors_convocation/honors_convocation_04.webp`,
 		],
+		banners: [],
 	},
 	{
 		title: 'Book Cover Design',
@@ -29,6 +34,7 @@ const motionDesignProjects = [
 			`${process.env.PUBLIC_URL}/projects/graphic_design/book_cover/book_cover_02.webp`,
 			`${process.env.PUBLIC_URL}/projects/graphic_design/book_cover/book_cover_03.webp`,
 		],
+		banners: [],
 	},
 	{
 		title: 'Type & Community',
@@ -60,6 +66,7 @@ const motionDesignProjects = [
 			`${process.env.PUBLIC_URL}/projects/graphic_design/flower_shop/flower_shop_07.webp`,
 			`${process.env.PUBLIC_URL}/projects/graphic_design/flower_shop/flower_shop_08.webp`,
 		],
+		banners: [],
 	},
 	{
 		title: 'Eco Friendly Vehicles Logo Design',
@@ -72,6 +79,7 @@ const motionDesignProjects = [
 			`${process.env.PUBLIC_URL}/projects/graphic_design/vehicle_logos/vehicle_logos_03.webp`,
 			`${process.env.PUBLIC_URL}/projects/graphic_design/vehicle_logos/vehicle_logos_04.webp`,
 		],
+		banners: [],
 	},
 	{
 		title: 'Letter Ligature Design',
@@ -83,6 +91,7 @@ const motionDesignProjects = [
 			`${process.env.PUBLIC_URL}/projects/graphic_design/letter_ligature/letter_ligature_02.webp`,
 			`${process.env.PUBLIC_URL}/projects/graphic_design/letter_ligature/letter_ligature_03.webp`,
 		],
+		banners: [],
 	},
 	{
 		title: 'Icon Key',
@@ -94,6 +103,7 @@ const motionDesignProjects = [
 			`${process.env.PUBLIC_URL}/projects/graphic_design/icon_key/icon_key_03.webp`,
 			`${process.env.PUBLIC_URL}/projects/graphic_design/icon_key/icon_key_04.webp`,
 		],
+		banners: [],
 	},
 	{
 		title: 'Brochure Cover',
@@ -102,6 +112,7 @@ const motionDesignProjects = [
 		images: [
 			`${process.env.PUBLIC_URL}/projects/graphic_design/brochure_cover/brochure_cover_01.webp`,
 		],
+		banners: [],
 	},
 	{
 		title: 'Quote Design',
@@ -112,6 +123,7 @@ const motionDesignProjects = [
 			`${process.env.PUBLIC_URL}/projects/graphic_design/quote_design/quote_design_02.webp`,
 			`${process.env.PUBLIC_URL}/projects/graphic_design/quote_design/quote_design_03.webp`,
 		],
+		banners: [],
 	},
 ];
 
