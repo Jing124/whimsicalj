@@ -114,7 +114,11 @@ const motionDesignProjects = [
 			`${process.env.PUBLIC_URL}/projects/graphic_design/letter_ligature/letter_ligature_02.webp`,
 			`${process.env.PUBLIC_URL}/projects/graphic_design/letter_ligature/letter_ligature_03.webp`,
 		],
-		banners: [],
+		banners: [
+			`${process.env.PUBLIC_URL}/projects/graphic_design/letter_ligature/banners/letter_ligature_01.webp`,
+			`${process.env.PUBLIC_URL}/projects/graphic_design/letter_ligature/banners/letter_ligature_02.webp`,
+			`${process.env.PUBLIC_URL}/projects/graphic_design/letter_ligature/banners/letter_ligature_03.webp`,
+		],
 	},
 	{
 		title: 'Icon Key',
