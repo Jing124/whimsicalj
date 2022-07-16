@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 const Container = ({
@@ -18,6 +19,10 @@ const Container = ({
 			{children}
 		</div>
 	);
+};
+
+Container.propTypes = {
+	id: PropTypes.string,
 };
 
 export default Container;

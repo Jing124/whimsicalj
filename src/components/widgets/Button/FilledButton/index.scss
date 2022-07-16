@@ -17,16 +17,16 @@
 	// Animations
 	transition: background-color 0.1s ease-in-out, opacity 0.1s ease-in-out;
 
-	&.primary {
-		background-color: var(--btn-background-color-primary-filled-l);
+	// &.primary {
+	// 	background-color: var(--btn-background-color-primary-filled-l);
 
-		&:hover {
-			background: var(--btn-background-color-primary-filled-hover-l);
-		}
-	}
+	// 	&:hover {
+	// 		background: var(--btn-background-color-primary-filled-hover-l);
+	// 	}
+	// }
 
 	&.secondary {
-		background-color: var(--btn-background-color-secondary-filled-l);
+		background-color: #353a3f;
 
 		&:hover {
 			opacity: 0.8;
@@ -35,22 +35,6 @@
 
 	svg {
 		font-size: 20px;
-	}
-}
-
-.widget.FilledButton.dark {
-	&.primary {
-		background-color: var(--btn-background-color-primary-filled-d);
-
-		&:hover {
-			background-color: var(
-				--btn-background-color-primary-filled-hover-d
-			);
-		}
-	}
-
-	&.secondary {
-		background-color: var(--btn-background-color-secondary-filled-d);
 	}
 }
 

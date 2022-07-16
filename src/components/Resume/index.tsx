@@ -3,7 +3,6 @@ import './index.scss';
 import Content from '../Content';
 import ExternalLink from '../widgets/Link/ExternalLink/ExternalLink';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
-import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 
 const Resume = () => {
 	return (
@@ -18,6 +17,7 @@ const Resume = () => {
 					</ExternalLink>
 				</div>
 			}
+			titleBorderBottom
 		>
 			<div className='flex flex-col justify-center'>
 				<div>

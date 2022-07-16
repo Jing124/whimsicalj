@@ -1,0 +1,15 @@
+#Contact {
+	.submit-btn {
+		aspect-ratio: 1;
+		// width: 50%;
+		width: 100px;
+		color: rgb(84, 84, 84);
+		@apply text-xl;
+		@apply font-bold;
+		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+		svg {
+			font-size: 2rem;
+		}
+	}
+}

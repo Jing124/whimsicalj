@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 
+import Contact from './components/Contact';
 import GraphicDesign from './components/GraphicDesign';
 import Home from './components/Home';
 import Layout from './components/Layout';
@@ -28,6 +29,7 @@ const App = () => {
 				<Route path='/video-editing' element={<VideoEditing />}></Route>
 				<Route path='/ux-ui' element={<UxUi />}></Route>
 				<Route path='/resume' element={<Resume />}></Route>
+				<Route path='/contact' element={<Contact />}></Route>
 			</Routes>
 		</Layout>
 	);
