@@ -39,6 +39,11 @@ const motionDesignProjects = [
 			`${process.env.PUBLIC_URL}/projects/graphic_design/type_and_community/type_and_community_02.webp`,
 			`${process.env.PUBLIC_URL}/projects/graphic_design/type_and_community/type_and_community_03.webp`,
 		],
+		banners: [
+			`${process.env.PUBLIC_URL}/projects/graphic_design/type_and_community/banners/type_and_community_01.webp`,
+			`${process.env.PUBLIC_URL}/projects/graphic_design/type_and_community/banners/type_and_community_02.webp`,
+			`${process.env.PUBLIC_URL}/projects/graphic_design/type_and_community/banners/type_and_community_03.webp`,
+		],
 	},
 	{
 		title: 'Flower Shop',

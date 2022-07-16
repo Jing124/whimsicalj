@@ -58,23 +58,25 @@ const GraphicDesign = () => {
 									scrollbar={{ draggable: true }}
 									className='cursor-pointer'
 								>
-									{project.images.map((img, index) => {
-										return (
-											<SwiperSlide
-												key={index}
-												onClick={() => {
-													handleSwiperOnClick(
-														project.images
-													);
-												}}
-											>
-												<img
-													src={img}
-													alt={project.title}
-												/>
-											</SwiperSlide>
-										);
-									})}
+									{(project.banners ?? project.images).map(
+										(img, index) => {
+											return (
+												<SwiperSlide
+													key={index}
+													onClick={() => {
+														handleSwiperOnClick(
+															project.images
+														);
+													}}
+												>
+													<img
+														src={img}
+														alt={project.title}
+													/>
+												</SwiperSlide>
+											);
+										}
+									)}
 								</Swiper>
 							</ProjectRowItem>
 						</ProjectRow>

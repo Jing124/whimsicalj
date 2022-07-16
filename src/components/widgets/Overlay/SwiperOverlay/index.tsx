@@ -54,7 +54,10 @@ const SwiperOverlay = ({
 			>
 				{images.map((img, index) => {
 					return (
-						<SwiperSlide className='flex justify-center'>
+						<SwiperSlide
+							key={index}
+							className='flex justify-center'
+						>
 							<img src={img} alt='img' className='m-auto' />
 						</SwiperSlide>
 					);
