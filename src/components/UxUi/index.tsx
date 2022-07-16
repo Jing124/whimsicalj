@@ -32,7 +32,14 @@ const UxUi = () => {
 			</div>
 			<div className='my-20 grid md:grid-cols-2 lg:grid-cols-3 gap-10 justify-center'>
 				{uxuiProjects.map((project, index) => {
-					return <img src={project} key={index} alt='project' />;
+					return (
+						<img
+							className='m-auto'
+							src={project}
+							key={index}
+							alt='project'
+						/>
+					);
 				})}
 			</div>
 		</Content>
