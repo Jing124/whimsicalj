@@ -130,7 +130,12 @@ const motionDesignProjects = [
 			`${process.env.PUBLIC_URL}/projects/graphic_design/icon_key/icon_key_03.webp`,
 			`${process.env.PUBLIC_URL}/projects/graphic_design/icon_key/icon_key_04.webp`,
 		],
-		banners: [],
+		banners: [
+			`${process.env.PUBLIC_URL}/projects/graphic_design/icon_key/banners/icon_key_01.webp`,
+			`${process.env.PUBLIC_URL}/projects/graphic_design/icon_key/banners/icon_key_02.webp`,
+			`${process.env.PUBLIC_URL}/projects/graphic_design/icon_key/banners/icon_key_03.webp`,
+			`${process.env.PUBLIC_URL}/projects/graphic_design/icon_key/banners/icon_key_04.webp`,
+		],
 	},
 	{
 		title: 'Brochure Cover',

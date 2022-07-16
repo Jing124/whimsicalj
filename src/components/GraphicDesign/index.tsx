@@ -16,8 +16,11 @@ import ProjectRowTitle from '../gadgets/ProjectRow/ProjectRowTitle';
 import { default as SwiperClass } from 'swiper/types/swiper-class';
 import SwiperOverlay from '../widgets/Overlay/SwiperOverlay';
 import graphicDesignProjects from './constants/graphicDesignProjects';
+import usePageTitle from '../../hooks/usePageTitle';
 
 const GraphicDesign = () => {
+	usePageTitle('Graphic Design | WhimsicalJ');
+
 	const [overlayOpen, setOpenLayOpen] = useState(false);
 	const [images, setImages] = useState<Array<string>>([]);
 
