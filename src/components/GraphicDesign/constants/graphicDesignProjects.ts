@@ -22,7 +22,12 @@ const motionDesignProjects = [
 			`${process.env.PUBLIC_URL}/projects/graphic_design/honors_convocation/honors_convocation_03.webp`,
 			`${process.env.PUBLIC_URL}/projects/graphic_design/honors_convocation/honors_convocation_04.webp`,
 		],
-		banners: [],
+		banners: [
+			`${process.env.PUBLIC_URL}/projects/graphic_design/honors_convocation/banners/honors_convocation_01.webp`,
+			`${process.env.PUBLIC_URL}/projects/graphic_design/honors_convocation/banners/honors_convocation_02.webp`,
+			`${process.env.PUBLIC_URL}/projects/graphic_design/honors_convocation/banners/honors_convocation_03.webp`,
+			`${process.env.PUBLIC_URL}/projects/graphic_design/honors_convocation/banners/honors_convocation_04.webp`,
+		],
 	},
 	{
 		title: 'Book Cover Design',
