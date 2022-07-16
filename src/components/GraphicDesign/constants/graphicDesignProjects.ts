@@ -39,7 +39,11 @@ const motionDesignProjects = [
 			`${process.env.PUBLIC_URL}/projects/graphic_design/book_cover/book_cover_02.webp`,
 			`${process.env.PUBLIC_URL}/projects/graphic_design/book_cover/book_cover_03.webp`,
 		],
-		banners: [],
+		banners: [
+			`${process.env.PUBLIC_URL}/projects/graphic_design/book_cover/banners/book_cover_01.webp`,
+			`${process.env.PUBLIC_URL}/projects/graphic_design/book_cover/banners/book_cover_02.webp`,
+			`${process.env.PUBLIC_URL}/projects/graphic_design/book_cover/banners/book_cover_03.webp`,
+		],
 	},
 	{
 		title: 'Type & Community',
