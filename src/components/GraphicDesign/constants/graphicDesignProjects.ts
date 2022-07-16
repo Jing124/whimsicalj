@@ -97,7 +97,12 @@ const motionDesignProjects = [
 			`${process.env.PUBLIC_URL}/projects/graphic_design/vehicle_logos/vehicle_logos_03.webp`,
 			`${process.env.PUBLIC_URL}/projects/graphic_design/vehicle_logos/vehicle_logos_04.webp`,
 		],
-		banners: [],
+		banners: [
+			`${process.env.PUBLIC_URL}/projects/graphic_design/vehicle_logos/banners/vehicle_logos_01.webp`,
+			`${process.env.PUBLIC_URL}/projects/graphic_design/vehicle_logos/banners/vehicle_logos_02.webp`,
+			`${process.env.PUBLIC_URL}/projects/graphic_design/vehicle_logos/banners/vehicle_logos_03.webp`,
+			`${process.env.PUBLIC_URL}/projects/graphic_design/vehicle_logos/banners/vehicle_logos_04.webp`,
+		],
 	},
 	{
 		title: 'Letter Ligature Design',
