@@ -35,7 +35,7 @@ class RouteUtilModel {
 		},
 		UX_UI: {
 			get: () => {
-				return '/ux_ui';
+				return '/ux-ui';
 			},
 		},
 		RESUME: {
