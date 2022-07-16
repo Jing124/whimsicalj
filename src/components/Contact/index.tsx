@@ -51,6 +51,7 @@ const Contact = () => {
 
 	const handleMessageChange = useCallback(
 		(evt: FormEvent<HTMLTextAreaElement>) => {
+			console.log(evt.currentTarget.value);
 			setMessage(evt.currentTarget.value);
 		},
 		[setMessage]
@@ -59,18 +60,19 @@ const Contact = () => {
 	const handleOnSubmit = useCallback(
 		(evt: React.FormEvent<HTMLFormElement>) => {
 			evt.preventDefault();
-			console.log(evt);
 
 			if (!subject || !firstName || !lastName || !email || !message) {
 				enqueueSnackbar('Please fill in all the required fields', {
 					variant: 'error',
 				});
+				return;
 			}
 
 			if (message.length < 10) {
 				enqueueSnackbar('Please leave some more messages :)', {
 					variant: 'error',
 				});
+				return;
 			}
 
 			if (emailSent) {
@@ -78,6 +80,9 @@ const Contact = () => {
 			}
 
 			setSending(true);
+			enqueueSnackbar('Sending email', {
+				variant: 'info',
+			});
 			sendMail({
 				subject,
 				firstName,
