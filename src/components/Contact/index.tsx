@@ -51,7 +51,6 @@ const Contact = () => {
 
 	const handleMessageChange = useCallback(
 		(evt: FormEvent<HTMLTextAreaElement>) => {
-			console.log(evt.currentTarget.value);
 			setMessage(evt.currentTarget.value);
 		},
 		[setMessage]

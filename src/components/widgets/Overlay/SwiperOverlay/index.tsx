@@ -50,8 +50,6 @@ const SwiperOverlay = ({
 				navigation
 				pagination={{ clickable: true }}
 				scrollbar={{ draggable: true }}
-				onSwiper={(swiper) => console.log(swiper)}
-				onSlideChange={() => console.log('slide change')}
 				className='w-full h-full'
 			>
 				{images.map((img, index) => {
