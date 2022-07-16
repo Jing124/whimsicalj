@@ -75,7 +75,16 @@ const motionDesignProjects = [
 			`${process.env.PUBLIC_URL}/projects/graphic_design/flower_shop/flower_shop_07.webp`,
 			`${process.env.PUBLIC_URL}/projects/graphic_design/flower_shop/flower_shop_08.webp`,
 		],
-		banners: [],
+		banners: [
+			`${process.env.PUBLIC_URL}/projects/graphic_design/flower_shop/banners/flower_shop_01.webp`,
+			`${process.env.PUBLIC_URL}/projects/graphic_design/flower_shop/banners/flower_shop_02.webp`,
+			`${process.env.PUBLIC_URL}/projects/graphic_design/flower_shop/banners/flower_shop_03.webp`,
+			`${process.env.PUBLIC_URL}/projects/graphic_design/flower_shop/banners/flower_shop_04.webp`,
+			`${process.env.PUBLIC_URL}/projects/graphic_design/flower_shop/banners/flower_shop_05.webp`,
+			`${process.env.PUBLIC_URL}/projects/graphic_design/flower_shop/banners/flower_shop_06.webp`,
+			`${process.env.PUBLIC_URL}/projects/graphic_design/flower_shop/banners/flower_shop_07.webp`,
+			`${process.env.PUBLIC_URL}/projects/graphic_design/flower_shop/banners/flower_shop_08.webp`,
+		],
 	},
 	{
 		title: 'Eco Friendly Vehicles Logo Design',
