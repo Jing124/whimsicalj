@@ -144,7 +144,9 @@ const motionDesignProjects = [
 		images: [
 			`${process.env.PUBLIC_URL}/projects/graphic_design/brochure_cover/brochure_cover_01.webp`,
 		],
-		banners: [],
+		banners: [
+			`${process.env.PUBLIC_URL}/projects/graphic_design/brochure_cover/banners/brochure_cover_01.webp`,
+		],
 	},
 	{
 		title: 'Quote Design',
@@ -155,7 +157,11 @@ const motionDesignProjects = [
 			`${process.env.PUBLIC_URL}/projects/graphic_design/quote_design/quote_design_02.webp`,
 			`${process.env.PUBLIC_URL}/projects/graphic_design/quote_design/quote_design_03.webp`,
 		],
-		banners: [],
+		banners: [
+			`${process.env.PUBLIC_URL}/projects/graphic_design/quote_design/banners/quote_design_01.webp`,
+			`${process.env.PUBLIC_URL}/projects/graphic_design/quote_design/banners/quote_design_02.webp`,
+			`${process.env.PUBLIC_URL}/projects/graphic_design/quote_design/banners/quote_design_03.webp`,
+		],
 	},
 ];
 
