@@ -12,6 +12,7 @@ const Home = () => {
 						poster={`${process.env.PUBLIC_URL}/videos/intro/poster.jpg`}
 						autoPlay
 						muted
+						playsInline
 					>
 						<source
 							src={`${process.env.PUBLIC_URL}/videos/intro/intro.mp4`}

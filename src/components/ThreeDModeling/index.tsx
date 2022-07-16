@@ -75,7 +75,6 @@ const ThreeDModeling = () => {
 											Scrollbar,
 											A11y,
 										]}
-										spaceBetween={50}
 										slidesPerView={1}
 										navigation
 										pagination={{ clickable: true }}
