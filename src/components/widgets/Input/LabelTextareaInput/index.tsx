@@ -5,7 +5,7 @@ import { HTMLProps, ReactNode } from 'react';
 import TextareaInput from '../TextareaInput';
 
 const LabelTextareaInput = (
-	props: HTMLProps<HTMLInputElement> & { labelElement: ReactNode }
+	props: HTMLProps<HTMLTextAreaElement> & { labelElement: ReactNode }
 ) => {
 	const { labelElement, className = '', ...attributes } = props;
 	return (

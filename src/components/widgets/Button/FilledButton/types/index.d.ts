@@ -29,4 +29,6 @@ export type FilledButtonProps = {
 		| ButtonHTMLAttributes<HTMLButtonElement>
 		| AnchorHTMLAttributes<HTMLAnchorElement>
 		| HTMLAttributes<HTMLSpanElement>;
+	type?: 'button' | 'submit' | 'reset';
+	disabled?: boolean;
 };

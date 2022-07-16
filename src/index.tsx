@@ -4,6 +4,7 @@ import App from './App';
 import { HashRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import React from 'react';
+import { SnackbarProvider } from 'notistack';
 import { createRoot } from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import { store } from './app/store';
@@ -15,7 +16,16 @@ root.render(
 	<React.StrictMode>
 		<Provider store={store}>
 			<HashRouter>
-				<App />
+				<SnackbarProvider
+					maxSnack={10}
+					anchorOrigin={{
+						vertical: 'top',
+						horizontal: 'right',
+					}}
+					autoHideDuration={7000}
+				>
+					<App />
+				</SnackbarProvider>
 			</HashRouter>
 		</Provider>
 	</React.StrictMode>

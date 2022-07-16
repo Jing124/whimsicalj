@@ -15,6 +15,8 @@ const FilledButton = ({
 	btnType,
 	size,
 	Icon,
+	type,
+	disabled,
 	...attributes
 }: FilledButtonProps) => {
 	const classes = useMemo(() => {
@@ -31,7 +33,12 @@ const FilledButton = ({
 
 	if (!btnType || btnType === 'button') {
 		return (
-			<button className={classes} {...attributes}>
+			<button
+				disabled={disabled}
+				type={type}
+				className={classes}
+				{...attributes}
+			>
 				{Icon ? (
 					<div className='flex flex-wrap gap-2 items-center'>
 						<div>
