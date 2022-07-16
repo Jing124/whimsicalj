@@ -24,12 +24,14 @@ const Resume = () => {
 					<img
 						className='m-auto'
 						src={`${process.env.PUBLIC_URL}/resume/page_01.webp`}
+						alt='resume-page-1'
 					/>
 				</div>
 				<div>
 					<img
 						className='m-auto'
 						src={`${process.env.PUBLIC_URL}/resume/page_02.webp`}
+						alt='resume-page-2'
 					/>
 				</div>
 			</div>

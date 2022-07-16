@@ -60,6 +60,10 @@ const Contact = () => {
 		(evt: React.FormEvent<HTMLFormElement>) => {
 			evt.preventDefault();
 
+			if (sending) {
+				return;
+			}
+
 			if (!subject || !firstName || !lastName || !email || !message) {
 				enqueueSnackbar('Please fill in all the required fields', {
 					variant: 'error',
@@ -134,6 +138,7 @@ const Contact = () => {
 							<img
 								src={`${process.env.PUBLIC_URL}/profiles/profile.webp`}
 								className='rounded-full'
+								alt='profile'
 							/>
 						</div>
 						<h1 className='font-extrabold text-4xl mt-8'>
