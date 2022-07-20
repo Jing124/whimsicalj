@@ -11,7 +11,7 @@ const Resume = () => {
 				<div className='flex flex-wrap gap-5 items-center'>
 					<div>Resume</div>
 					<ExternalLink
-						href={`${process.env.PUBLIC_URL}/resume/resume.pdf`}
+						href={`${process.env.PUBLIC_URL}/resume/Resume_Jing_Wang.pdf`}
 					>
 						<OpenInNewIcon fontSize='large' />
 					</ExternalLink>
@@ -23,14 +23,14 @@ const Resume = () => {
 				<div>
 					<img
 						className='m-auto'
-						src={`${process.env.PUBLIC_URL}/resume/page_01.webp`}
+						src={`${process.env.PUBLIC_URL}/resume/page_01.jpg`}
 						alt='resume-page-1'
 					/>
 				</div>
 				<div>
 					<img
 						className='m-auto'
-						src={`${process.env.PUBLIC_URL}/resume/page_02.webp`}
+						src={`${process.env.PUBLIC_URL}/resume/page_02.jpg`}
 						alt='resume-page-2'
 					/>
 				</div>
